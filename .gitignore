@@ -1,8 +1,6 @@
-/*/target
-/*/bin
+/*/target/
+/*/bin/
+/*/.settings/
 /*/.project
 /*/.classpath
-/*/.settings
 
-!/*
-!/*/
