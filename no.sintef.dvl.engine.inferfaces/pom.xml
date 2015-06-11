@@ -3,6 +3,14 @@
   <groupId>no.sintef.dvl</groupId>
   <artifactId>no.sintef.dvl.engine.inferfaces</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+   <parent>
+        <groupId>no.sintef.dvl</groupId>
+        <artifactId>root</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>..</relativePath>
+    </parent>
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
