@@ -4,11 +4,7 @@ import static org.junit.Assert.*;
 
 import static java.util.Arrays.asList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import static javax.swing.text.html.HTML.Tag.PRE;
-
-import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 import no.sintef.dvl.engine.Engine;
 import no.sintef.dvl.test.dummies.DummyModel;
 import no.sintef.dvl.test.dummies.ExecutionListener;
@@ -51,7 +47,7 @@ public class EngineTest {
     }
 
     @Test
-    public void testBidon() {
+    public void shouldConfigureFeatureFollowingTheirDependencies() {
 
         final OrderChecker trace = new OrderChecker();
 
@@ -81,6 +77,48 @@ public class EngineTest {
         assertTrue(trace.wasConfigured("featureA"));
         assertTrue(trace.wasConfigured("featureB"));
         assertTrue(trace.order("featureA", "featureB"));
+    }
+    
+    @Test(timeout = 500L)
+    public void shouldTerminateEvenIfFeaturesAreInterdependent() {
+
+        final OrderChecker trace = new OrderChecker();
+
+        DummyModel model = new DummyModel();
+
+        FeatureConfig featureA = new FeatureConfig("featureA", model, trace) {
+
+            @Override
+            public void performConfiguration() {
+                model.set("v1", 3);
+            }
+
+            @Override
+            public boolean checkReadiness() {
+                return model.get("v2") == 5;
+            }
+            
+        };
+
+        FeatureConfig featureB = new FeatureConfig("featureB", model, trace) {
+
+            @Override
+            public boolean checkReadiness() {
+                return model.get("v1") == 3;
+            }
+
+            @Override
+            public void performConfiguration() {
+                model.set("v2", 5);
+            }
+            
+        };
+
+        Engine engine = new Engine(asList(featureA, featureB));
+        engine.run();
+
+        assertFalse(trace.wasConfigured("featureA"));
+        assertFalse(trace.wasConfigured("featureB"));
     }
 
     

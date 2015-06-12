@@ -20,7 +20,9 @@ public class DummyModel {
     }
     
     public int get(String key) {
-        return variables.get(key);
+        Integer value = variables.get(key);
+        if (value == null) return 0;
+        return value;
     }
     
 }
