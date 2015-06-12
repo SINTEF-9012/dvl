@@ -24,11 +24,19 @@
       </plugin>
     </plugins>
   </build>
+  
    <dependencies>
-  	<dependency>
+       <dependency>
   		<groupId>no.sintef.dvl</groupId>
   		<artifactId>no.sintef.dvl.core.interfaces</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+       
+  	<dependency>
+  		<groupId>no.sintef.dvl</groupId>
+  		<artifactId>no.sintef.dvl.engine.inferfaces</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
    </dependencies>
+   
 </project>
