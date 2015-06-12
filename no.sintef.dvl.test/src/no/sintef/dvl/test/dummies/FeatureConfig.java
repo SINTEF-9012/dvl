@@ -4,37 +4,43 @@ import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 
 public class FeatureConfig implements IFeatureConfig {
 
-    private boolean ready;
-    private boolean[] invoked;
+    private final String name;
+    protected DummyModel model;
+    private final ExecutionListener listener;
 
-    public FeatureConfig(boolean ready) {
-        this.ready = ready;
-        invoked = new boolean[]{false, false, false};
-    }
-    
-
-    @Override
-    public void configure() {
-        invoked[CONFIGURE] = true;
+    public FeatureConfig(String name, DummyModel model, ExecutionListener listener) {
+        this.name = name;
+        this.model = model;
+        this.listener = listener;
     }
 
     @Override
-    public boolean pre() {
-        invoked[PRE] = true;
-        return ready;
+    public final void configure() {
+        performConfiguration();
+        listener.onConfigured(name);
     }
 
     @Override
-    public boolean post() {
-        invoked[POST] = true;
+    public final boolean pre() {
+        boolean result = checkReadiness();
+        return result;
+    }
+
+    @Override
+    public final boolean post() {
+        boolean result = checkConfiguration();
+        return result;
+    }
+
+    public boolean checkReadiness() {
         return true;
     }
-    
-    public boolean wasInvoked(int method) {
-        return invoked[method];
+
+    public void performConfiguration() {
     }
 
-    public static final int CONFIGURE = 0;
-    public static final int PRE = 1;
-    public static final int POST = 2;
+    public boolean checkConfiguration() {
+        return true;
+    }
+
 }
