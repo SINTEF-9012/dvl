@@ -4,6 +4,8 @@
     <artifactId>no.sintef.dvl.core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   
+    <name> Core </name>
+  
     <parent>
         <groupId>no.sintef.dvl</groupId>
         <artifactId>root</artifactId>
