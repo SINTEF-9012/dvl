@@ -1,13 +1,16 @@
 package no.sintef.dvl.core;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.uml2.uml.Classifier;
+import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.Model;
 import org.eclipse.uml2.uml.Property;
+import org.eclipse.uml2.uml.Type;
 import org.eclipse.uml2.uml.UMLFactory;
 import org.eclipse.uml2.uml.UMLPackage;
 
@@ -62,6 +65,35 @@ public class Laurin {
         org.eclipse.uml2.uml.Class backingSensor = createClass(base, "BackingSensor");
         org.eclipse.uml2.uml.Class laurin = findClassIn(base, "Laurin");
         createProperty(laurin, "backingSensor", backingSensor);
+    }
+
+    public boolean hasExtraWheel() {
+        org.eclipse.uml2.uml.Class laurinClass = findLaurinClass();
+        if (laurinClass == null) {
+            return false;
+        }
+
+        org.eclipse.uml2.uml.Class extraWheel = findExtraWheel();
+        if (extraWheel == null) {
+            return false;
+        }
+        
+        return laurinClass.getAttribute("backingSensor", extraWheel) != null;
+    }
+
+    private org.eclipse.uml2.uml.Class findExtraWheel() {
+        org.eclipse.uml2.uml.Package base = findBasePackage();
+        assert base != null : "No base package";
+
+        return findClassIn(base, "ExtraWheel");
+    }
+
+    public void enableExtraWheel() {
+        org.eclipse.uml2.uml.Package base = findBasePackage();
+        assert base != null : "No base package";
+        org.eclipse.uml2.uml.Class backingSensor = createClass(base, "ExtraWheel");
+        org.eclipse.uml2.uml.Class laurin = findClassIn(base, "Laurin");
+        createProperty(laurin, "extraWheel", backingSensor);
     }
 
     private org.eclipse.uml2.uml.Class createClass(org.eclipse.uml2.uml.Package thePackage, String className) {
