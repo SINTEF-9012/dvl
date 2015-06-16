@@ -13,6 +13,10 @@
         <relativePath>..</relativePath>
     </parent>
   
+    <build>
+        <testSourceDirectory>src</testSourceDirectory>
+    </build>
+  
     <dependencies>
 
         <dependency>
@@ -26,12 +30,7 @@
             <artifactId>no.sintef.dvl.test</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-        </dependency>
        
     </dependencies>
+    
 </project>

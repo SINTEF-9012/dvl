@@ -72,6 +72,7 @@ public class ExtraWheel implements IFeatureConfig {
     private Class createExtraWheelType() {
         org.eclipse.uml2.uml.Package base = findBasePackage();
         assert base != null : "No package 'Base'. This shoud have been detected by the pre-condition";
+        
         Class extraWheelClass = UMLFactory.eINSTANCE.createClass();
         extraWheelClass.setName("ExtraWheel");
         return extraWheelClass;
