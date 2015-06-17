@@ -11,11 +11,9 @@ import org.junit.Test;
  * Specification of 'park assistant' feature
  */
 public class ParkAssistTest extends FeatureTest {
-
-    private final SampleModels models;
-
+  
     public ParkAssistTest() {
-        models = new SampleModels();
+        super();
     }
 
     @Override

@@ -1,17 +1,13 @@
 
 package no.sintef.dvl.core;
 
-import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
-
 /**
  * The BackingSensor feature
  */
-public class BackingSensor implements IFeatureConfig {
-    
-    private final Laurin model;
-    
-    public BackingSensor(Laurin model) {
-        this.model = model; 
+public class BackingSensor extends LaurinFeature {
+        
+    public BackingSensor(Laurin car) {
+        super(car); 
     }
 
     @Override

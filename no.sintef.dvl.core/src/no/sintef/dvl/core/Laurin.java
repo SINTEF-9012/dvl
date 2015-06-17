@@ -27,6 +27,57 @@ public class Laurin {
         this.laurin = umlModel;
     }
 
+
+    public boolean hasBackingSensor() {
+        return hasExtra(BACKING_SENSOR_CLASS, BACKING_SENSOR_PROPERTY);
+    }
+
+    public void enableBackingSensor() {
+        enableExtra(BACKING_SENSOR_CLASS, BACKING_SENSOR_PROPERTY);
+    }
+
+    private void enableExtra(String className, String propertyName) {
+        org.eclipse.uml2.uml.Package base = findBasePackage();
+        assert base != null : "No base package";
+        
+        org.eclipse.uml2.uml.Class theClass = createClass(base, className);
+        org.eclipse.uml2.uml.Class laurin = findClassIn(base, LAURIN_CLASS_NAME);
+        createProperty(laurin, propertyName, theClass);
+    }
+
+    public boolean hasExtraWheel() {
+        return hasExtra(EXTRA_WHEEL_CLASS, EXTRA_WHEEL_PROPERTY);
+    }
+
+    private boolean hasExtra(String className, String propertyName) {
+        org.eclipse.uml2.uml.Class laurinClass = findLaurinClass();
+        if (laurinClass == null) {
+            return false;
+        }
+        
+        org.eclipse.uml2.uml.Package base = findBasePackage();
+        if (base == null) return false;
+        
+        org.eclipse.uml2.uml.Class extraWheel = findClassIn(base, className);
+        if (extraWheel == null) {
+            return false;
+        }
+
+        return laurinClass.getAttribute(propertyName, extraWheel) != null;
+    }
+
+    public void enableParkAssist() {
+        enableExtra(PARKING_ASSIST_CLASS, PARKING_ASSIST_PROPERTY);
+    }
+
+    public boolean hasParkAssist() {
+        return hasExtra(PARKING_ASSIST_CLASS, PARKING_ASSIST_PROPERTY);
+    }
+
+    public void enableExtraWheel() {
+        enableExtra(EXTRA_WHEEL_CLASS, EXTRA_WHEEL_PROPERTY);
+    }
+
     private org.eclipse.uml2.uml.Class findLaurinClass() {
         org.eclipse.uml2.uml.Package base = findBasePackage();
         if (base == null) {
@@ -34,103 +85,6 @@ public class Laurin {
         }
         return findClassIn(base, LAURIN_CLASS_NAME);
     }
-
-    private org.eclipse.uml2.uml.Class findBackingSensor() {
-        org.eclipse.uml2.uml.Package base = findBasePackage();
-        if (base == null) {
-            return null;
-        }
-        return findClassIn(base, BACKING_SENSOR_CLASS);
-    }
-
-    public boolean hasBackingSensor() {
-        org.eclipse.uml2.uml.Class laurin = findLaurinClass();
-        if (laurin == null) {
-            return false;
-        }
-        org.eclipse.uml2.uml.Class backingSensor = findBackingSensor();
-        if (backingSensor == null) {
-            return false;
-        }
-        Property backingSensorProperty = laurin.getAttribute(BACKING_SENSOR_PROPERTY, backingSensor);
-        return backingSensorProperty != null;
-    }
-
-    public void enableBackingSensor() {
-        org.eclipse.uml2.uml.Package base = findBasePackage();
-        assert base != null : "No base package";
-        org.eclipse.uml2.uml.Class backingSensor = createClass(base, BACKING_SENSOR_CLASS);
-        org.eclipse.uml2.uml.Class laurin = findClassIn(base, LAURIN_CLASS_NAME);
-        createProperty(laurin, BACKING_SENSOR_PROPERTY, backingSensor);
-    }
-
-    public boolean hasExtraWheel() {
-        org.eclipse.uml2.uml.Class laurinClass = findLaurinClass();
-        if (laurinClass == null) {
-            return false;
-        }
-
-        org.eclipse.uml2.uml.Class extraWheel = findExtraWheel();
-        if (extraWheel == null) {
-            return false;
-        }
-
-        return laurinClass.getAttribute(BACKING_SENSOR_PROPERTY, extraWheel) != null;
-    }
-
-    public void enableParkAssist() {
-        org.eclipse.uml2.uml.Package base = findBasePackage();
-        assert base != null : "No base package";
-        org.eclipse.uml2.uml.Class parkingAssist = createClass(base, PARKING_ASSIST_CLASS);
-        org.eclipse.uml2.uml.Class laurin = findClassIn(base, LAURIN_CLASS_NAME);
-        createProperty(laurin, PARKING_ASSIST_PROPERTY, parkingAssist);
-    }
-
-    public boolean hasParkAssist() {
-        org.eclipse.uml2.uml.Class laurinClass = findLaurinClass();
-        if (laurinClass == null) {
-            return false;
-        }
-
-        org.eclipse.uml2.uml.Class parkingAssist = findParkingAssist();
-        if (parkingAssist == null) {
-            return false;
-        }
-
-        return laurinClass.getAttribute(PARKING_ASSIST_PROPERTY, parkingAssist) != null;
-    }
-
-    private org.eclipse.uml2.uml.Class findParkingAssist() {
-        org.eclipse.uml2.uml.Package base = findBasePackage();
-        assert base != null : "No base package";
-
-        return findClassIn(base, PARKING_ASSIST_CLASS);
-    }
-
-    private static final String LAURIN_CLASS_NAME = "Laurin";
-    private static final String BACKING_SENSOR_CLASS = "BackingSensor";
-    private static final String BACKING_SENSOR_PROPERTY = "backingSensor";
-    private static final String PARKING_ASSIST_CLASS = "ParkingAssist";
-    private static final String PARKING_ASSIST_PROPERTY = "parkingAssist";
-    private static final String EXTRA_WHEEL_CLASS = "ExtraWheel";
-
-    private org.eclipse.uml2.uml.Class findExtraWheel() {
-        org.eclipse.uml2.uml.Package base = findBasePackage();
-        assert base != null : "No base package";
-
-        return findClassIn(base, EXTRA_WHEEL_CLASS);
-    }
-
-    public void enableExtraWheel() {
-        org.eclipse.uml2.uml.Package base = findBasePackage();
-        assert base != null : "No base package";
-
-        org.eclipse.uml2.uml.Class extraWheel = createClass(base, EXTRA_WHEEL_CLASS);
-        org.eclipse.uml2.uml.Class laurin = findClassIn(base, LAURIN_CLASS_NAME);
-        createProperty(laurin, EXTRA_WHEEL_PROPERTY, extraWheel);
-    }
-    
-    private static final String EXTRA_WHEEL_PROPERTY = "extraWheel";
 
     private org.eclipse.uml2.uml.Class createClass(org.eclipse.uml2.uml.Package thePackage, String className) {
         org.eclipse.uml2.uml.Class theClass = factory.createClass();
@@ -140,7 +94,7 @@ public class Laurin {
     }
 
     private void createProperty(org.eclipse.uml2.uml.Class theClass, String propertyName, org.eclipse.uml2.uml.Type theType) {
-        Property theProperty = UMLFactory.eINSTANCE.createProperty();
+        Property theProperty = factory.createProperty();
         theProperty.setName(propertyName);
         theProperty.setType(theType);
         theClass.getOwnedAttributes().add(theProperty);
@@ -153,7 +107,7 @@ public class Laurin {
     }
 
     private org.eclipse.uml2.uml.Package findBasePackage() {
-        return (org.eclipse.uml2.uml.Package) laurin.getPackagedElement("Base");
+        return (org.eclipse.uml2.uml.Package) laurin.getPackagedElement(BASE_PACKAGE);
     }
 
     public boolean hasLaurinCar() {
@@ -188,5 +142,14 @@ public class Laurin {
     public static Laurin from(Model model) {
         return new Laurin(model);
     }
+
+    private static final String LAURIN_CLASS_NAME = "Laurin";
+    private static final String BACKING_SENSOR_CLASS = "BackingSensor";
+    private static final String BACKING_SENSOR_PROPERTY = "backingSensor";
+    private static final String PARKING_ASSIST_CLASS = "ParkingAssist";
+    private static final String PARKING_ASSIST_PROPERTY = "parkingAssist";
+    private static final String EXTRA_WHEEL_CLASS = "ExtraWheel";
+    private static final String EXTRA_WHEEL_PROPERTY = "extraWheel";
+    private static final String BASE_PACKAGE = "Base";
 
 }

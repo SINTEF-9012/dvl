@@ -1,15 +1,9 @@
 package no.sintef.dvl.core;
 
-import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
-
-public class ExtraWheel implements IFeatureConfig {
-
-    private final Laurin model;
+public class ExtraWheel extends LaurinFeature {
 
     public ExtraWheel(Laurin model) {
-        assert model != null : "Invalid UML2 model ('null' found)";
-
-        this.model = model;
+        super(model);
     }
 
     @Override
@@ -19,7 +13,7 @@ public class ExtraWheel implements IFeatureConfig {
 
     @Override
     public boolean post() {
-       return model.hasExtraWheel();
+        return model.hasExtraWheel();
     }
 
     @Override

@@ -15,6 +15,12 @@ import org.junit.Test;
 
 public abstract class FeatureTest {
 
+    protected final SampleModels models;
+
+    public FeatureTest() {
+        models = new SampleModels();
+    }
+        
     protected final IFeatureConfig prepareFeature(String path) {
         final Laurin car = Laurin.loadFrom(path);
         return makeFeature(car);

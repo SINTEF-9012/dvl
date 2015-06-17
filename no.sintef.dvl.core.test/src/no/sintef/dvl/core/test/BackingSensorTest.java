@@ -9,10 +9,8 @@ import org.junit.Test;
 
 public class BackingSensorTest extends FeatureTest {
 
-    private final SampleModels models;
-
     public BackingSensorTest() {
-        models = new SampleModels();
+        super();
     }
 
     @Override

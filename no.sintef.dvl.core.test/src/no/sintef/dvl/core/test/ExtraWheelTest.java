@@ -9,6 +9,10 @@ import org.junit.Test;
 
 public class ExtraWheelTest extends FeatureTest {
 
+    public ExtraWheelTest() {
+        super();
+    }
+    
     @Override
     protected IFeatureConfig makeFeature(Laurin car) {
         return new BackingSensor(car);
