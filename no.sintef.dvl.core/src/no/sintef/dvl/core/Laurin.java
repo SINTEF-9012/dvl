@@ -12,7 +12,8 @@ import org.eclipse.uml2.uml.UMLFactory;
 import org.eclipse.uml2.uml.UMLPackage;
 
 /**
- * Wrapper class which provides an API that helps manipulating Laurin models.
+ * Wrapper class which provides an API that helps manipulating Laurin car
+ * models.
  *
  * Mainly extracted from observing duplicated code in both features realization
  * and tests
@@ -38,7 +39,7 @@ public class Laurin {
     private void enableExtra(String className, String propertyName) {
         org.eclipse.uml2.uml.Package base = findBasePackage();
         assert base != null : "No base package";
-        
+
         org.eclipse.uml2.uml.Class theClass = createClass(base, className);
         org.eclipse.uml2.uml.Class laurin = findClassIn(base, LAURIN_CLASS_NAME);
         createProperty(laurin, propertyName, theClass);
@@ -53,10 +54,12 @@ public class Laurin {
         if (laurinClass == null) {
             return false;
         }
-        
+
         org.eclipse.uml2.uml.Package base = findBasePackage();
-        if (base == null) return false;
-        
+        if (base == null) {
+            return false;
+        }
+
         org.eclipse.uml2.uml.Class extraWheel = findClassIn(base, className);
         if (extraWheel == null) {
             return false;
@@ -150,5 +153,13 @@ public class Laurin {
     private static final String EXTRA_WHEEL_CLASS = "ExtraWheel";
     private static final String EXTRA_WHEEL_PROPERTY = "extraWheel";
     private static final String BASE_PACKAGE = "Base";
+
+    void enableDoubleTrunk() {
+        enableExtra("DoubleTrunk", "doubleTrunk");
+    }
+
+    boolean hasDoubleTrunk() {
+        return hasExtra("DoubleTrunk", "doubleTrunk");
+    }
 
 }
