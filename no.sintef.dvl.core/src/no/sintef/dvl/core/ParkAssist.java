@@ -1,9 +1,13 @@
 package no.sintef.dvl.core;
 
+import no.sintef.dvl.core.interfaces.common.FeatureID;
+
 /**
  * Realization of the 'ParkAssist' feature
  */
 public class ParkAssist extends LaurinFeature {
+
+    private static final FeatureID FEATURE_ID = new FeatureID("park_assist");
 
     public ParkAssist(Laurin car) {
         super(car);
@@ -22,6 +26,11 @@ public class ParkAssist extends LaurinFeature {
     @Override
     protected void doConfiguration() {
         model.enableParkAssist();
+    }
+
+    @Override
+    protected FeatureID feature() {
+        return FEATURE_ID;
     }
 
 }

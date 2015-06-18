@@ -1,5 +1,6 @@
 package no.sintef.dvl.core;
 
+import no.sintef.dvl.core.interfaces.common.FeatureID;
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 
 public abstract class LaurinFeature implements IFeatureConfig {
@@ -12,11 +13,19 @@ public abstract class LaurinFeature implements IFeatureConfig {
         }
         this.model = model;
     }
+    
+    @Override
+    public final boolean realize(FeatureID feature) {
+        return feature.equals(feature());
+    }
+    
+    protected abstract FeatureID feature();
 
     @Override
     public final void configure() {
         if (!pre()) {
-            throw new IllegalStateException("The laurin car is not ready for configuring feature 'XXX'");
+            final String description = String.format("The laurin car is not ready for configuring feature '%s'", feature());
+            throw new IllegalStateException(description);
         }
         if (!post()) {
             doConfiguration();

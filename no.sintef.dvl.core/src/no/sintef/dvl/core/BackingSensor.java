@@ -1,6 +1,8 @@
 
 package no.sintef.dvl.core;
 
+import no.sintef.dvl.core.interfaces.common.FeatureID;
+
 /**
  * The BackingSensor feature
  */
@@ -24,5 +26,12 @@ public class BackingSensor extends LaurinFeature {
     protected void doConfiguration() {
         model.enableBackingSensor();
     }
+
+    @Override
+    protected FeatureID feature() {
+        return FEATURE_ID;
+    }
+    
+    private static final FeatureID FEATURE_ID = new FeatureID("backing_sensor");
     
 }

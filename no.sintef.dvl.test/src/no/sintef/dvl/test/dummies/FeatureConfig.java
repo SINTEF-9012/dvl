@@ -1,5 +1,6 @@
 package no.sintef.dvl.test.dummies;
 
+import no.sintef.dvl.core.interfaces.common.FeatureID;
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 
 public class FeatureConfig implements IFeatureConfig {
@@ -41,6 +42,11 @@ public class FeatureConfig implements IFeatureConfig {
 
     public boolean checkConfiguration() {
         return true;
+    }
+
+    @Override
+    public boolean realize(FeatureID feature) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

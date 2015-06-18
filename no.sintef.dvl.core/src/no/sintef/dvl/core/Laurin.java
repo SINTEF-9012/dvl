@@ -20,7 +20,7 @@ import org.eclipse.uml2.uml.UMLPackage;
 public class Laurin {
 
     private final Model laurin;
-    private UMLFactory factory;
+    private final UMLFactory factory;
 
     private Laurin(Model umlModel) {
         this.factory = UMLFactory.eINSTANCE;
