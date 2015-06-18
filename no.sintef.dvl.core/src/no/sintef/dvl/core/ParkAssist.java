@@ -20,7 +20,7 @@ public class ParkAssist extends LaurinFeature {
     }
 
     @Override
-    public void configure() {
+    protected void doConfiguration() {
         model.enableParkAssist();
     }
 

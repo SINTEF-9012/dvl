@@ -21,11 +21,7 @@ public class BackingSensor extends LaurinFeature {
     }
 
     @Override
-    public void configure() {
-        if (!pre()) {
-            throw new IllegalStateException("Unable to configure option, the model is not ready for it");
-        }
-        
+    protected void doConfiguration() {
         model.enableBackingSensor();
     }
     

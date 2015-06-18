@@ -17,11 +17,7 @@ public class ExtraWheel extends LaurinFeature {
     }
 
     @Override
-    public void configure() {
-        if (!pre()) {
-            throw new IllegalStateException("The given model is not ready to configure the feature 'extra wheel'");
-        }
-
+    protected void doConfiguration() {
         model.enableExtraWheel();
     }
 

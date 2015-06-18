@@ -27,7 +27,6 @@ public class Laurin {
         this.laurin = umlModel;
     }
 
-
     public boolean hasBackingSensor() {
         return hasExtra(BACKING_SENSOR_CLASS, BACKING_SENSOR_PROPERTY);
     }
