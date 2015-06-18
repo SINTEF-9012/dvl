@@ -21,13 +21,13 @@ public class ExtraWheelTest extends FeatureTest {
     @Test
     public void preShouldDetectTheExistenceOfTheLaurinClass() {
         IFeatureConfig feature = prepareFeature("resources/yeti.uml");
-        assertThat(feature.pre(), is(true));
+        assertThat(feature.isConfigurable(), is(true));
     }
 
     @Test
     public void postShouldNotBeValidOnTheInitialYetiModel() {
         IFeatureConfig feature = prepareFeature("resources/yeti.uml");
-        assertThat(feature.post(), is(false));
+        assertThat(feature.isConfigured(), is(false));
     }
 
 }

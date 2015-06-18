@@ -14,12 +14,12 @@ public class ParkAssist extends LaurinFeature {
     }
 
     @Override
-    public boolean pre() {
-        return model.hasLaurinCar() && !model.hasBackingSensor();
+    public boolean isConfigurable() {
+        return model.isLaurinCar() && !model.hasBackingSensor();
     }
 
     @Override
-    public boolean post() {
+    public boolean isConfigured() {
         return model.hasParkAssist();
     }
 

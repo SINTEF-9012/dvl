@@ -24,13 +24,13 @@ public class ParkAssistTest extends FeatureTest {
     @Test
     public void preShouldDetectMissingBasePackage() {
         IFeatureConfig feature = prepareFeature(models.empty());
-        assertThat(feature.pre(), is(false));
+        assertThat(feature.isConfigurable(), is(false));
     }
 
     @Test
     public void preShouldDetectMissingLaurinClass() {
         IFeatureConfig feature = prepareFeature(models.emptyBasePackage());
-        assertThat(feature.pre(), is(false));
+        assertThat(feature.isConfigurable(), is(false));
     }
 
 }

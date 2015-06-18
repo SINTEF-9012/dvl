@@ -32,7 +32,7 @@ public class Engine implements IEngine {
                 return null;
             }
             for (IFeatureConfig anyFeature : items) {
-                if (anyFeature.pre()) {
+                if (anyFeature.isConfigurable()) {
                     return anyFeature;
                 }
             }

@@ -38,11 +38,11 @@ public abstract class FeatureTest {
     public void shouldBeConfiguredProperlyIfReady() {
         IFeatureConfig feature = prepareFeature("resources/yeti.uml");
 
-        assertThat(feature.pre(), is(true));
+        assertThat(feature.isConfigurable(), is(true));
 
         feature.configure();
 
-        assertThat(feature.post(), is(true));
+        assertThat(feature.isConfigured(), is(true));
     }
 
 }

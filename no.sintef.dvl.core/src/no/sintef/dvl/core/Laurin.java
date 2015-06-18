@@ -109,7 +109,7 @@ public class Laurin {
         return (org.eclipse.uml2.uml.Package) laurin.getPackagedElement(BASE_PACKAGE);
     }
 
-    public boolean hasLaurinCar() {
+    public boolean isLaurinCar() {
         return findLaurinClass() != null;
     }
 

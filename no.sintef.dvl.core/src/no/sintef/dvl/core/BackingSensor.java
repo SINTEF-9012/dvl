@@ -13,12 +13,12 @@ public class BackingSensor extends LaurinFeature {
     }
 
     @Override
-    public boolean pre() {
-        return model.hasLaurinCar();
+    public boolean isConfigurable() {
+        return model.isLaurinCar();
     }
 
     @Override
-    public boolean post() {
+    public boolean isConfigured() {
        return model.hasBackingSensor();
     }
 

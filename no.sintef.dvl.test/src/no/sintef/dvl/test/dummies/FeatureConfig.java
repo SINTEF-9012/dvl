@@ -22,13 +22,13 @@ public class FeatureConfig implements IFeatureConfig {
     }
 
     @Override
-    public final boolean pre() {
+    public final boolean isConfigurable() {
         boolean result = checkReadiness();
         return result;
     }
 
     @Override
-    public final boolean post() {
+    public final boolean isConfigured() {
         boolean result = checkConfiguration();
         return result;
     }
@@ -45,7 +45,7 @@ public class FeatureConfig implements IFeatureConfig {
     }
 
     @Override
-    public boolean realize(FeatureID feature) {
+    public boolean relateTo(FeatureID feature) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

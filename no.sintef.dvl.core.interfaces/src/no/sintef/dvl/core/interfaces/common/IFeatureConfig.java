@@ -9,11 +9,25 @@ public interface IFeatureConfig {
      * @return true if this is the realization of the given feature, false
      * otherwise.
      */
-    public boolean realize(FeatureID feature);
+    public boolean relateTo(FeatureID feature);
 
-    public boolean pre();
+    /**
+     * The pre condition of the configuration.
+     *
+     * @return true if the feature is ready to be configured, false otherwise.
+     */
+    public boolean isConfigurable();
 
-    public boolean post();
-
+    /**
+     * Configure the related feature.
+     */
     public void configure();
+
+    /**
+     * The post condition of the configuration.
+     *
+     * @return true if the feature has already been configured, false otherwise.
+     */
+    public boolean isConfigured();
+
 }

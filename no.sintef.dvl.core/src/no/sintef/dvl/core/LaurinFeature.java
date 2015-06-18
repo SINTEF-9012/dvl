@@ -15,7 +15,7 @@ public abstract class LaurinFeature implements IFeatureConfig {
     }
     
     @Override
-    public final boolean realize(FeatureID feature) {
+    public final boolean relateTo(FeatureID feature) {
         return feature.equals(feature());
     }
     
@@ -23,11 +23,11 @@ public abstract class LaurinFeature implements IFeatureConfig {
 
     @Override
     public final void configure() {
-        if (!pre()) {
+        if (!isConfigurable()) {
             final String description = String.format("The laurin car is not ready for configuring feature '%s'", feature());
             throw new IllegalStateException(description);
         }
-        if (!post()) {
+        if (!isConfigured()) {
             doConfiguration();
         }
     }
