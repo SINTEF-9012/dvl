@@ -5,7 +5,7 @@
  */
 package no.sintef.dvl.core.test;
 
-import no.sintef.dvl.core.BackingSensor;
+
 import no.sintef.dvl.core.Laurin;
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 import org.eclipse.uml2.uml.Model;
@@ -28,7 +28,6 @@ public abstract class FeatureTest {
 
     protected final IFeatureConfig prepareFeature(Model model) {
         final Laurin car = Laurin.from(model); 
-        BackingSensor feature = new BackingSensor(car);
         return makeFeature(car);
     }
     
