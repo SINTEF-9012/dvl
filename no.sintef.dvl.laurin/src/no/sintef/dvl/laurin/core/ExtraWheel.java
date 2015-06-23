@@ -1,12 +1,12 @@
 package no.sintef.dvl.laurin.core;
 
-import no.sintef.dvl.common.FeatureID;
-import no.sintef.dvl.core.interfaces.common.IFeatureID;
+import no.sintef.dvl.core.featureid.FeatureIDFacade;
+import no.sintef.dvl.core.interfaces.featureid.IFeatureID;
 import no.sintef.dvl.laurin.interfaces.core.ILaurin;
 
 public class ExtraWheel extends LaurinFeature {
 
-	private static final IFeatureID FEATURE_ID = new FeatureID("extra_wheel");
+	private static final IFeatureID FEATURE_ID = FeatureIDFacade.eINSTANCE.createFeatureID("extra_wheel");
 
 	public ExtraWheel(ILaurin model) {
 		super(model);

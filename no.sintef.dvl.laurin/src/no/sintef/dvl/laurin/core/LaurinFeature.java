@@ -1,7 +1,7 @@
 package no.sintef.dvl.laurin.core;
 
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
-import no.sintef.dvl.core.interfaces.common.IFeatureID;
+import no.sintef.dvl.core.interfaces.featureid.IFeatureID;
 import no.sintef.dvl.laurin.interfaces.core.ILaurin;
 
 public abstract class LaurinFeature implements IFeatureConfig {

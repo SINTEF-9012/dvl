@@ -1,5 +1,7 @@
 package no.sintef.dvl.core.interfaces.common;
 
+import no.sintef.dvl.core.interfaces.featureid.IFeatureID;
+
 public interface IFeatureConfig {
 
 	/**

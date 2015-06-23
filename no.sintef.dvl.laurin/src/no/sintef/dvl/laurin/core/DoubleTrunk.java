@@ -1,7 +1,7 @@
 package no.sintef.dvl.laurin.core;
 
-import no.sintef.dvl.common.FeatureID;
-import no.sintef.dvl.core.interfaces.common.IFeatureID;
+import no.sintef.dvl.core.featureid.FeatureIDFacade;
+import no.sintef.dvl.core.interfaces.featureid.IFeatureID;
 import no.sintef.dvl.laurin.interfaces.core.ILaurin;
 
 /**
@@ -9,7 +9,7 @@ import no.sintef.dvl.laurin.interfaces.core.ILaurin;
  */
 public class DoubleTrunk extends LaurinFeature {
 
-	private static final IFeatureID FEATURE_ID = new FeatureID("double_trunk");
+	private static final IFeatureID FEATURE_ID = FeatureIDFacade.eINSTANCE.createFeatureID("double_trunk");
 
 	public DoubleTrunk(ILaurin model) {
 		super(model);

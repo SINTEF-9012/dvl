@@ -2,7 +2,7 @@ package no.sintef.dvl.laurin.test.core;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
-import no.sintef.dvl.common.FeatureID;
+import no.sintef.dvl.core.featureid.FeatureID;
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 import no.sintef.dvl.laurin.core.DoubleTrunk;
 import no.sintef.dvl.laurin.uml.core.Laurin;

@@ -1,6 +1,6 @@
 package no.sintef.dvl.core.test.common;
 
-import no.sintef.dvl.common.FeatureID;
+import no.sintef.dvl.core.featureid.FeatureID;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;

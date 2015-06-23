@@ -1,7 +1,7 @@
 package no.sintef.dvl.test.dummies;
 
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
-import no.sintef.dvl.core.interfaces.common.IFeatureID;
+import no.sintef.dvl.core.interfaces.featureid.IFeatureID;
 
 public class FeatureConfig implements IFeatureConfig {
 

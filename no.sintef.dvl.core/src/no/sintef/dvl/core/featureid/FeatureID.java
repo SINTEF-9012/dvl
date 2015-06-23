@@ -1,8 +1,8 @@
-package no.sintef.dvl.common;
+package no.sintef.dvl.core.featureid;
 
 import java.util.Objects;
 
-import no.sintef.dvl.core.interfaces.common.IFeatureID;
+import no.sintef.dvl.core.interfaces.featureid.IFeatureID;
 
 /**
  * Identify a feature uniquely within a Feature tree. This is a value object
