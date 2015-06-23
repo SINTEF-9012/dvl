@@ -34,7 +34,4 @@ public abstract class LaurinFeature implements IFeatureConfig {
     }
 
     protected abstract void doConfiguration();
-    
-    
-
 }

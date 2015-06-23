@@ -28,7 +28,7 @@
         <module>no.sintef.dvl.engine.inferfaces</module>
         <module>no.sintef.dvl.engine.test</module>
         <module>no.sintef.dvl.test</module>
-		<module>no.sintef.dvl.laurin</module>
+		<module>no.sintef.dvl.laurin.uml</module>
 		<module>no.sintef.dvl.laurin.interfaces</module>
     </modules>
     

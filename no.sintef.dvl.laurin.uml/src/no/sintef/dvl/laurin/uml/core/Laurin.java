@@ -1,4 +1,4 @@
-package no.sintef.dvl.laurin.core;
+package no.sintef.dvl.laurin.uml.core;
 
 import no.sintef.dvl.laurin.interfaces.core.ILaurin;
 
