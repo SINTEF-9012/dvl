@@ -32,14 +32,14 @@ public class Engine140hpTest extends FeatureTest {
 	}
 
 	@Test
-	public void postShouldDetectMissingBackingSensorProperty() {
+	public void postShouldDetectMissingEngineProperty() {
 		IFeatureConfig feature = prepareFeature(models.emptyLaurinClass());
 		assertThat(feature.isConfigurable(), is(true));
 		assertThat(feature.isConfigured(), is(false));
 	}
 
 	@Test
-	public void postShouldDetectMissingBackingSensorClass() {
+	public void postShouldDetectMissingEngineClass() {
 		IFeatureConfig feature = prepareFeature(models.emptyLaurinClass());
 		assertThat(feature.isConfigurable(), is(true));
 		assertThat(feature.isConfigured(), is(false));
