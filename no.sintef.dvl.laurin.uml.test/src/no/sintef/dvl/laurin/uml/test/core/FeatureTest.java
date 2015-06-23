@@ -21,13 +21,13 @@ public abstract class FeatureTest {
 		models = new SampleModels();
 	}
 
-	protected final IFeatureConfig prepareFeature(String path) {
-		final Laurin car = Laurin.loadFrom(path);
+	protected IFeatureConfig prepareFeature(String path) {
+		Laurin car = Laurin.loadFrom(path);
 		return makeFeature(car);
 	}
 
-	protected final IFeatureConfig prepareFeature(Model model) {
-		final Laurin car = Laurin.from(model);
+	protected IFeatureConfig prepareFeature(Model model) {
+		Laurin car = Laurin.from(model);
 		return makeFeature(car);
 	}
 
@@ -35,7 +35,9 @@ public abstract class FeatureTest {
 
 	@Test
 	public void shouldBeConfiguredProperlyIfReady() {
-		IFeatureConfig feature = prepareFeature("resources/yeti.uml");
+		// Laurin car = Laurin.loadFrom("resources/model.uml");
+		IFeatureConfig feature = prepareFeature("resources/model.uml");
+		// IFeatureConfig feature = makeFeature(car);
 
 		assertThat(feature.isConfigurable(), is(true));
 

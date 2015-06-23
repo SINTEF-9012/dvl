@@ -7,8 +7,10 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
+import org.eclipse.uml2.uml.Class;
 import org.eclipse.uml2.uml.Classifier;
 import org.eclipse.uml2.uml.Model;
+import org.eclipse.uml2.uml.Package;
 import org.eclipse.uml2.uml.Property;
 import org.eclipse.uml2.uml.UMLFactory;
 import org.eclipse.uml2.uml.UMLPackage;
@@ -22,8 +24,8 @@ import org.eclipse.uml2.uml.UMLPackage;
  */
 public class Laurin implements ILaurin {
 
-	private final Model laurin;
-	private final UMLFactory factory;
+	private Model laurin;
+	private UMLFactory factory;
 
 	private Laurin(Model umlModel) {
 		this.factory = UMLFactory.eINSTANCE;
@@ -62,12 +64,12 @@ public class Laurin implements ILaurin {
 			return false;
 		}
 
-		org.eclipse.uml2.uml.Class extraWheel = findClassIn(base, className);
-		if (extraWheel == null) {
+		org.eclipse.uml2.uml.Class klass = findClassIn(base, className);
+		if (klass == null) {
 			return false;
 		}
 
-		return laurinClass.getAttribute(propertyName, extraWheel) != null;
+		return laurinClass.getAttribute(propertyName, klass) != null;
 	}
 
 	public void enableParkAssist() {
@@ -159,6 +161,7 @@ public class Laurin implements ILaurin {
 	private static final String BASE_PACKAGE = "Base";
 	private static final String BASE_ENGINE_CLASS = "Engine";
 	private static final String BASE_ENGINE_PROPERTY = "engine";
+	private static final String BASE_ENGINE_HP140_CLASS = "hp140";
 
 	public void enableDoubleTrunk() {
 		enableExtra("DoubleTrunk", "doubleTrunk");
@@ -177,7 +180,8 @@ public class Laurin implements ILaurin {
 	}
 
 	public boolean isEngine140hpInsatalled() {
-		// TODO Auto-generated method stub
-		return false;
+		Package base = findBasePackage();
+		Class klass = findClassIn(base, BASE_ENGINE_HP140_CLASS);
+		return hasExtra(BASE_ENGINE_CLASS, BASE_ENGINE_PROPERTY) && klass != null;
 	}
 }

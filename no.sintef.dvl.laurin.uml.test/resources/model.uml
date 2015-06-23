@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_97_uIAp8EeOlp_CLMd2EmQ" name="model">
+  <packagedElement xmi:type="uml:Package" xmi:id="_IZBtsAp9EeOlp_CLMd2EmQ" name="Base">
+    <packagedElement xmi:type="uml:Class" xmi:id="_QhSOQAp9EeOlp_CLMd2EmQ" name="Laurin">
+      <ownedAttribute xmi:id="_d2D3AAp9EeOlp_CLMd2EmQ" name="automatic" type="_R6Z9UAp9EeOlp_CLMd2EmQ" aggregation="composite" association="_d2D3Awp9EeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d2D3AQp9EeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d2D3Agp9EeOlp_CLMd2EmQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_bSvJMAp-EeOlp_CLMd2EmQ" name="manual" type="_YcoewAp-EeOlp_CLMd2EmQ" aggregation="composite" association="_bSvJMwp-EeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bSvJMQp-EeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bSvJMgp-EeOlp_CLMd2EmQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_nMAdQAp-EeOlp_CLMd2EmQ" name="engine" type="_h-wVQAp-EeOlp_CLMd2EmQ" aggregation="composite" association="_nMAdQwp-EeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nMAdQQp-EeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nMAdQgp-EeOlp_CLMd2EmQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_qIy-gAp-EeOlp_CLMd2EmQ" name="transmission" type="_jHW8EAp-EeOlp_CLMd2EmQ" aggregation="composite" association="_qIy-gwp-EeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qIy-gQp-EeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qIy-ggp-EeOlp_CLMd2EmQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ut46UAp-EeOlp_CLMd2EmQ" name="extras" type="_lfG2kAp-EeOlp_CLMd2EmQ" aggregation="composite" association="_ut46Uwp-EeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ut46UQp-EeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ut46Ugp-EeOlp_CLMd2EmQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R6Z9UAp9EeOlp_CLMd2EmQ" name="Automatic"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_d2D3Awp9EeOlp_CLMd2EmQ" name="" memberEnd="_d2D3BAp9EeOlp_CLMd2EmQ _d2D3AAp9EeOlp_CLMd2EmQ">
+      <ownedEnd xmi:id="_d2D3BAp9EeOlp_CLMd2EmQ" name="" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_d2D3Awp9EeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d2D3BQp9EeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d2D3Bgp9EeOlp_CLMd2EmQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YcoewAp-EeOlp_CLMd2EmQ" name="Manual"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bSvJMwp-EeOlp_CLMd2EmQ" name="" memberEnd="_bSvJNAp-EeOlp_CLMd2EmQ _bSvJMAp-EeOlp_CLMd2EmQ">
+      <ownedEnd xmi:id="_bSvJNAp-EeOlp_CLMd2EmQ" name="" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_bSvJMwp-EeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bSvJNQp-EeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bSvJNgp-EeOlp_CLMd2EmQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_h-wVQAp-EeOlp_CLMd2EmQ" name="Engine"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jHW8EAp-EeOlp_CLMd2EmQ" name="Transmission"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lfG2kAp-EeOlp_CLMd2EmQ" name="Extras">
+      <ownedAttribute xmi:id="_Py7okAp_EeOlp_CLMd2EmQ" name="extraItem" type="_NSGqkAp_EeOlp_CLMd2EmQ" aggregation="composite" association="_Py7okwp_EeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Py7okQp_EeOlp_CLMd2EmQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Py7okgp_EeOlp_CLMd2EmQ" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nMAdQwp-EeOlp_CLMd2EmQ" name="laurin_engine_1" memberEnd="_nMAdRAp-EeOlp_CLMd2EmQ _nMAdQAp-EeOlp_CLMd2EmQ">
+      <ownedEnd xmi:id="_nMAdRAp-EeOlp_CLMd2EmQ" name="laurin" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_nMAdQwp-EeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nMAdRQp-EeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nMAdRgp-EeOlp_CLMd2EmQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qIy-gwp-EeOlp_CLMd2EmQ" name="laurin_transmission_1" memberEnd="_qIy-hAp-EeOlp_CLMd2EmQ _qIy-gAp-EeOlp_CLMd2EmQ">
+      <ownedEnd xmi:id="_qIy-hAp-EeOlp_CLMd2EmQ" name="laurin" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_qIy-gwp-EeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qIy-hQp-EeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qIy-hgp-EeOlp_CLMd2EmQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ut46Uwp-EeOlp_CLMd2EmQ" name="laurin_extras_1" memberEnd="_ut46VAp-EeOlp_CLMd2EmQ _ut46UAp-EeOlp_CLMd2EmQ">
+      <ownedEnd xmi:id="_ut46VAp-EeOlp_CLMd2EmQ" name="laurin" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_ut46Uwp-EeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ut46VQp-EeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ut46Vgp-EeOlp_CLMd2EmQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zP_zkAp-EeOlp_CLMd2EmQ" name="WD2">
+      <generalization xmi:id="_4FcfkAp-EeOlp_CLMd2EmQ" general="_jHW8EAp-EeOlp_CLMd2EmQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1VlnEAp-EeOlp_CLMd2EmQ" name="WD4">
+      <generalization xmi:id="_5FHM0Ap-EeOlp_CLMd2EmQ" general="_jHW8EAp-EeOlp_CLMd2EmQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NSGqkAp_EeOlp_CLMd2EmQ" name="ExtraItem"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Py7okwp_EeOlp_CLMd2EmQ" name="extras_extraItem_1" memberEnd="_Py7olAp_EeOlp_CLMd2EmQ _Py7okAp_EeOlp_CLMd2EmQ">
+      <ownedEnd xmi:id="_Py7olAp_EeOlp_CLMd2EmQ" name="extras" type="_lfG2kAp-EeOlp_CLMd2EmQ" association="_Py7okwp_EeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Py7olQp_EeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Py7olgp_EeOlp_CLMd2EmQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
