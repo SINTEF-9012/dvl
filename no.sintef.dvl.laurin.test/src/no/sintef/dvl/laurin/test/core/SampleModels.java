@@ -1,4 +1,4 @@
-package no.sintef.dvl.core.test;
+package no.sintef.dvl.laurin.test.core;
 
 import org.eclipse.uml2.uml.Model;
 import org.eclipse.uml2.uml.Package;
