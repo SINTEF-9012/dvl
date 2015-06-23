@@ -1,4 +1,4 @@
-package no.sintef.dvl.laurin.test.core;
+package no.sintef.dvl.laurin.uml.test.core;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;

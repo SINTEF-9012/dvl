@@ -2,10 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>no.sintef.dvl.laurin</groupId>
-	<artifactId>no.sintef.dvl.laurin.test</artifactId>
+	<artifactId>no.sintef.dvl.laurin.uml.test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
-	<name>Laurin Profile (PIM) :: Test</name>
+	<name>Laurin UML Profile (PSM) :: Test</name>
 
 	<parent>
 		<groupId>no.sintef.dvl</groupId>
@@ -36,6 +35,12 @@
 		<dependency>
 			<groupId>no.sintef.dvl.laurin</groupId>
 			<artifactId>no.sintef.dvl.laurin.interfaces</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>no.sintef.dvl.laurin</groupId>
+			<artifactId>no.sintef.dvl.laurin.uml</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
