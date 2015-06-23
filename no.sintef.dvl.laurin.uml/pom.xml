@@ -2,8 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>no.sintef.dvl.laurin</groupId>
   <artifactId>no.sintef.dvl.laurin.uml</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
+
   <name>Laurin UML Profile (PSM)</name>
   
   <parent>
@@ -23,7 +22,7 @@
        
 
         <dependency>
-        	<groupId>no.sintef.dvl</groupId>
+        	<groupId>no.sintef.dvl.laurin</groupId>
         	<artifactId>no.sintef.dvl.laurin.interfaces</artifactId>
         	<version>0.0.1-SNAPSHOT</version>
         </dependency>

@@ -3,8 +3,6 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>no.sintef.dvl.laurin</groupId>
 	<artifactId>no.sintef.dvl.laurin.interfaces</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-
 	<name>Laurin Profile :: Interfaces</name>
 
 	<parent>
