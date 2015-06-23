@@ -4,7 +4,7 @@
   <artifactId>no.sintef.dvl.laurin.uml</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  <name>Laurin Profile</name>
+  <name>Laurin UML Profile</name>
   
   <parent>
 	<groupId>no.sintef.dvl</groupId>
