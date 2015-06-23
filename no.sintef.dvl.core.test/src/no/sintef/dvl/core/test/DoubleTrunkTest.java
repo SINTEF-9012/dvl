@@ -1,12 +1,13 @@
 
 package no.sintef.dvl.core.test;
 
+import no.sintef.dvl.common.FeatureID;
 import no.sintef.dvl.core.DoubleTrunk;
 import no.sintef.dvl.core.Laurin;
-import no.sintef.dvl.core.interfaces.common.FeatureID;
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+
 import org.junit.Test;
 
 /**

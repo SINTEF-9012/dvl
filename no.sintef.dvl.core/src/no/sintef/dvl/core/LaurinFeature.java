@@ -1,7 +1,8 @@
 package no.sintef.dvl.core;
 
-import no.sintef.dvl.core.interfaces.common.FeatureID;
+
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
+import no.sintef.dvl.core.interfaces.common.IFeatureID;
 
 public abstract class LaurinFeature implements IFeatureConfig {
 
@@ -15,11 +16,11 @@ public abstract class LaurinFeature implements IFeatureConfig {
     }
     
     @Override
-    public final boolean relateTo(FeatureID feature) {
+    public final boolean relateTo(IFeatureID feature) {
         return feature.equals(feature());
     }
     
-    protected abstract FeatureID feature();
+    protected abstract IFeatureID feature();
 
     @Override
     public final void configure() {

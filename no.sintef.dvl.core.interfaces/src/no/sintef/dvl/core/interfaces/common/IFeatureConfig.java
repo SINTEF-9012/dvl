@@ -1,5 +1,6 @@
 package no.sintef.dvl.core.interfaces.common;
 
+
 public interface IFeatureConfig {
 
     /**
@@ -9,7 +10,7 @@ public interface IFeatureConfig {
      * @return true if this is the realization of the given feature, false
      * otherwise.
      */
-    public boolean relateTo(FeatureID feature);
+    public boolean relateTo(IFeatureID feature);
 
     /**
      * The pre condition of the configuration.

@@ -1,9 +1,10 @@
-package no.sintef.dvl.core.interfaces;
+package no.sintef.dvl.core.test.common;
 
-import no.sintef.dvl.core.interfaces.common.FeatureID;
+import no.sintef.dvl.common.FeatureID;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+
 import org.junit.Test;
 
 /**

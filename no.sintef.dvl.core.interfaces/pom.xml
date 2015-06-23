@@ -12,9 +12,5 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
-    
-    <build> 
-        <testSourceDirectory>test</testSourceDirectory> 
-    </build>
-  
+
 </project>

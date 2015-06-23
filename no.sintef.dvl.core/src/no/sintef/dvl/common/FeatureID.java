@@ -1,12 +1,14 @@
-package no.sintef.dvl.core.interfaces.common;
+package no.sintef.dvl.common;
 
 import java.util.Objects;
+
+import no.sintef.dvl.core.interfaces.common.IFeatureID;
 
 /**
  * Identify a feature uniquely within a Feature tree. This is a value object
  * (immutable)
  */
-public class FeatureID {
+public class FeatureID implements IFeatureID {
 
     private final String name;
 

@@ -1,6 +1,6 @@
 package no.sintef.dvl.core;
 
-import no.sintef.dvl.core.interfaces.common.FeatureID;
+import no.sintef.dvl.common.FeatureID;
 
 public class ExtraWheel extends LaurinFeature {
 

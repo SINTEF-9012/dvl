@@ -27,6 +27,48 @@
         	<artifactId>no.sintef.dvl.laurin.interfaces</artifactId>
         	<version>0.0.1-SNAPSHOT</version>
         </dependency>
+        
+                <dependency>
+            <groupId>org.eclipse.maven</groupId>
+            <artifactId>org.eclipse.emf.ecore</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.eclipse.maven</groupId>
+            <artifactId>org.eclipse.emf.common</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.maven</groupId>
+            <artifactId>org.eclipse.emf.ecore.xmi</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+       
+        <dependency>
+            <groupId>org.eclipse.maven</groupId>
+            <artifactId>org.eclipse.uml2.uml</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.eclipse.maven</groupId>
+            <artifactId>org.eclipse.uml2</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.maven</groupId>
+            <artifactId>org.eclipse.uml2.common</artifactId>
+            <version>1.7.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.eclipse.maven</groupId>
+            <artifactId>org.eclipse.uml2.types</artifactId>
+            <version>1.0.0</version>
+        </dependency>
       </dependencies>
   
 </project>
