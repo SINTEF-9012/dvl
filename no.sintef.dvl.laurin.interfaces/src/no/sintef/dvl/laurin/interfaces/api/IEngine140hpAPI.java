@@ -1,4 +1,4 @@
-package no.sintef.dvl.laurin.interfaces.core;
+package no.sintef.dvl.laurin.interfaces.api;
 
 public interface IEngine140hpAPI {
 

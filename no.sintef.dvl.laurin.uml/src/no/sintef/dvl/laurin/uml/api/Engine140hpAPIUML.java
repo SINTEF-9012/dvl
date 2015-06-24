@@ -1,13 +1,13 @@
-package no.sintef.dvl.laurin.uml.core;
+package no.sintef.dvl.laurin.uml.api;
 
-import no.sintef.dvl.laurin.interfaces.core.IEngine140hpAPI;
+import no.sintef.dvl.laurin.interfaces.api.IEngine140hpAPI;
 import no.sintef.dvl.laurin.uml.tools.Utilities;
 
 import org.eclipse.uml2.uml.Class;
 import org.eclipse.uml2.uml.Model;
 import org.eclipse.uml2.uml.Package;
 
-public class Engine140hpUmlAPI implements IEngine140hpAPI {
+public class Engine140hpAPIUML implements IEngine140hpAPI {
 
 	private Model laurin;
 
@@ -15,7 +15,7 @@ public class Engine140hpUmlAPI implements IEngine140hpAPI {
 	private final String BASE_ENGINE_PROPERTY = "engine";
 	private final String BASE_ENGINE_HP140_CLASS = "hp140";
 
-	public Engine140hpUmlAPI(Model _laurin) {
+	public Engine140hpAPIUML(Model _laurin) {
 		laurin = _laurin;
 	}
 

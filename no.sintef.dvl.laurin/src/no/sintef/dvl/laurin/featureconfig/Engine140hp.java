@@ -2,7 +2,7 @@ package no.sintef.dvl.laurin.featureconfig;
 
 import no.sintef.dvl.core.featureid.FeatureIDFacade;
 import no.sintef.dvl.core.interfaces.featureid.IFeatureID;
-import no.sintef.dvl.laurin.interfaces.core.IEngine140hpAPI;
+import no.sintef.dvl.laurin.interfaces.api.IEngine140hpAPI;
 
 public class Engine140hp extends LaurinFeature {
 

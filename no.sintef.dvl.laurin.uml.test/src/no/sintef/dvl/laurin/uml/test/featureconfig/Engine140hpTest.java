@@ -4,7 +4,8 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 import no.sintef.dvl.laurin.featureconfig.Engine140hp;
-import no.sintef.dvl.laurin.uml.core.Engine140hpUmlAPI;
+import no.sintef.dvl.laurin.interfaces.api.IEngine140hpAPI;
+import no.sintef.dvl.laurin.uml.api.Engine140hpAPIUML;
 import no.sintef.dvl.laurin.uml.core.Laurin;
 
 import org.eclipse.uml2.uml.Model;
@@ -15,7 +16,8 @@ public class Engine140hpTest extends FeatureTest {
 
 	@Override
 	protected IFeatureConfig makeFeature(Laurin<Model> car) {
-		Engine140hpUmlAPI api = new Engine140hpUmlAPI((Model) car.getLaurinModel());
+		Model laurin_model = (Model) car.getLaurinModel();
+		IEngine140hpAPI api = new Engine140hpAPIUML(laurin_model);
 		return new Engine140hp(api);
 	}
 

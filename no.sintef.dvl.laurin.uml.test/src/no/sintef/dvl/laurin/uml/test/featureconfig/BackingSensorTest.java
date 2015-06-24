@@ -4,8 +4,10 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 import no.sintef.dvl.laurin.featureconfig.BackingSensor;
+import no.sintef.dvl.laurin.uml.api.BackingSensorAPIUML;
 import no.sintef.dvl.laurin.uml.core.Laurin;
 
+import org.eclipse.uml2.uml.Model;
 import org.junit.Test;
 
 public class BackingSensorTest extends FeatureTest {
@@ -16,7 +18,9 @@ public class BackingSensorTest extends FeatureTest {
 
 	@Override
 	protected IFeatureConfig makeFeature(Laurin car) {
-		return new BackingSensor(car);
+		Model laurin_model = (Model) car.getLaurinModel();
+		BackingSensorAPIUML api = new BackingSensorAPIUML(laurin_model);
+		return new BackingSensor(api);
 	}
 
 	@Test
