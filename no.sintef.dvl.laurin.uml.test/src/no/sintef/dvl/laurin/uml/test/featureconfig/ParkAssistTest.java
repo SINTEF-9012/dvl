@@ -4,8 +4,11 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 import no.sintef.dvl.laurin.featureconfig.ParkAssist;
+import no.sintef.dvl.laurin.interfaces.api.IParkAssistAPI;
+import no.sintef.dvl.laurin.uml.api.ParkAssistAPIUML;
 import no.sintef.dvl.laurin.uml.core.Laurin;
 
+import org.eclipse.uml2.uml.Model;
 import org.junit.Test;
 
 /**
@@ -19,7 +22,9 @@ public class ParkAssistTest extends FeatureTest {
 
 	@Override
 	protected IFeatureConfig makeFeature(Laurin car) {
-		return new ParkAssist(car);
+		Model laurin_model = (Model) car.getLaurinModel();
+		IParkAssistAPI api = new ParkAssistAPIUML(laurin_model);
+		return new ParkAssist(api);
 	}
 
 	@Test

@@ -5,8 +5,11 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import no.sintef.dvl.core.featureid.FeatureID;
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 import no.sintef.dvl.laurin.featureconfig.DoubleTrunk;
+import no.sintef.dvl.laurin.interfaces.api.IDoubleTrunkAPI;
+import no.sintef.dvl.laurin.uml.api.DoubleTrunkAPIUML;
 import no.sintef.dvl.laurin.uml.core.Laurin;
 
+import org.eclipse.uml2.uml.Model;
 import org.junit.Test;
 
 /**
@@ -16,7 +19,9 @@ public class DoubleTrunkTest extends FeatureTest {
 
 	@Override
 	protected IFeatureConfig makeFeature(Laurin car) {
-		return new DoubleTrunk(car);
+		Model laurin_model = (Model) car.getLaurinModel();
+		IDoubleTrunkAPI api = new DoubleTrunkAPIUML(laurin_model);
+		return new DoubleTrunk(api);
 	}
 
 	@Test

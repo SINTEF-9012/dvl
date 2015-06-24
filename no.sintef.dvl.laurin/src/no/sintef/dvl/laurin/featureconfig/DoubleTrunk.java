@@ -2,7 +2,7 @@ package no.sintef.dvl.laurin.featureconfig;
 
 import no.sintef.dvl.core.featureid.FeatureIDFacade;
 import no.sintef.dvl.core.interfaces.featureid.IFeatureID;
-import no.sintef.dvl.laurin.interfaces.core.ILaurin;
+import no.sintef.dvl.laurin.interfaces.api.IDoubleTrunkAPI;
 
 /**
  * The double trunk feature
@@ -10,10 +10,10 @@ import no.sintef.dvl.laurin.interfaces.core.ILaurin;
 public class DoubleTrunk extends LaurinFeature {
 
 	private static final IFeatureID FEATURE_ID = FeatureIDFacade.eINSTANCE.createFeatureID("double_trunk");
-	protected final ILaurin<?> model;
+	private IDoubleTrunkAPI api;
 
-	public DoubleTrunk(ILaurin<?> _model) {
-		model = _model;
+	public DoubleTrunk(IDoubleTrunkAPI _api) {
+		api = _api;
 	}
 
 	@Override
@@ -23,17 +23,17 @@ public class DoubleTrunk extends LaurinFeature {
 
 	@Override
 	protected void doConfiguration() {
-		model.enableDoubleTrunk();
+		api.enableDoubleTrunk();
 	}
 
 	@Override
 	public boolean isConfigurable() {
-		return model.isLaurinCar();
+		return api.isLaurinCar();
 	}
 
 	@Override
 	public boolean isConfigured() {
-		return model.hasDoubleTrunk();
+		return api.hasDoubleTrunk();
 	}
 
 }
