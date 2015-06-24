@@ -9,6 +9,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 import no.sintef.dvl.laurin.uml.core.Laurin;
+import no.sintef.dvl.laurin.uml.tools.Utilities;
 
 import org.eclipse.uml2.uml.Model;
 import org.junit.Test;
@@ -22,16 +23,17 @@ public abstract class FeatureTest {
 	}
 
 	protected IFeatureConfig prepareFeature(String path) {
-		Laurin car = Laurin.loadFrom(path);
+		Model model = Utilities.loadLaurinModelFrom(path);
+		Laurin<Model> car = new Laurin<Model>(model);
 		return makeFeature(car);
 	}
 
 	protected IFeatureConfig prepareFeature(Model model) {
-		Laurin car = Laurin.from(model);
+		Laurin<Model> car = new Laurin<Model>(model);
 		return makeFeature(car);
 	}
 
-	protected abstract IFeatureConfig makeFeature(Laurin car);
+	protected abstract IFeatureConfig makeFeature(Laurin<Model> car);
 
 	@Test
 	public void shouldBeConfiguredProperlyIfReady() {

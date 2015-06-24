@@ -2,24 +2,25 @@ package no.sintef.dvl.laurin.featureconfig;
 
 import no.sintef.dvl.core.featureid.FeatureIDFacade;
 import no.sintef.dvl.core.interfaces.featureid.IFeatureID;
-import no.sintef.dvl.laurin.interfaces.core.ILaurin;
+import no.sintef.dvl.laurin.interfaces.core.IEngine140hpAPI;
 
 public class Engine140hp extends LaurinFeature {
 
 	private static final IFeatureID FEATURE_ID = FeatureIDFacade.eINSTANCE.createFeatureID("hp140");
+	private IEngine140hpAPI api;
 
-	public Engine140hp(ILaurin model) {
-		super(model);
+	public Engine140hp(IEngine140hpAPI _api) {
+		api = _api;
 	}
 
 	@Override
 	public boolean isConfigurable() {
-		return model.isEngineConfigurable();
+		return api.isEngineConfigurable();
 	}
 
 	@Override
 	public boolean isConfigured() {
-		return model.isEngine140hpInsatalled();
+		return api.isEngine140hpInsatalled();
 	}
 
 	@Override
@@ -29,7 +30,7 @@ public class Engine140hp extends LaurinFeature {
 
 	@Override
 	protected void doConfiguration() {
-		model.enable140hpEngine();
+		api.enable140hpEngine();
 	}
 
 }

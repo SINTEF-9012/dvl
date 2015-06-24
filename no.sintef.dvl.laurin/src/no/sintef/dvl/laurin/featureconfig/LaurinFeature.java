@@ -2,18 +2,9 @@ package no.sintef.dvl.laurin.featureconfig;
 
 import no.sintef.dvl.core.interfaces.common.IFeatureConfig;
 import no.sintef.dvl.core.interfaces.featureid.IFeatureID;
-import no.sintef.dvl.laurin.interfaces.core.ILaurin;
 
 public abstract class LaurinFeature implements IFeatureConfig {
 
-	protected final ILaurin model;
-
-	public LaurinFeature(ILaurin model) {
-		if (model == null) {
-			throw new NullPointerException("Invalid laurin car model ('null' found)");
-		}
-		this.model = model;
-	}
 
 	@Override
 	public final boolean relateTo(IFeatureID feature) {

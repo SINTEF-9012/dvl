@@ -10,9 +10,10 @@ import no.sintef.dvl.laurin.interfaces.core.ILaurin;
 public class DoubleTrunk extends LaurinFeature {
 
 	private static final IFeatureID FEATURE_ID = FeatureIDFacade.eINSTANCE.createFeatureID("double_trunk");
+	protected final ILaurin<?> model;
 
-	public DoubleTrunk(ILaurin model) {
-		super(model);
+	public DoubleTrunk(ILaurin<?> _model) {
+		model = _model;
 	}
 
 	@Override

@@ -10,9 +10,10 @@ import no.sintef.dvl.laurin.interfaces.core.ILaurin;
 public class BackingSensor extends LaurinFeature {
 
 	private static final IFeatureID FEATURE_ID = FeatureIDFacade.eINSTANCE.createFeatureID("backing_sensor");
+	protected final ILaurin<?> model;
 
-	public BackingSensor(ILaurin car) {
-		super(car);
+	public BackingSensor(ILaurin<?> car) {
+		model = car;
 	}
 
 	@Override

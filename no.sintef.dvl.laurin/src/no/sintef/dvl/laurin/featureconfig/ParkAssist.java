@@ -10,9 +10,10 @@ import no.sintef.dvl.laurin.interfaces.core.ILaurin;
 public class ParkAssist extends LaurinFeature {
 
 	private static final IFeatureID FEATURE_ID = FeatureIDFacade.eINSTANCE.createFeatureID("park_assist");
+	protected final ILaurin<?> model;
 
-	public ParkAssist(ILaurin car) {
-		super(car);
+	public ParkAssist(ILaurin<?> car) {
+		model = car;
 	}
 
 	@Override

@@ -7,9 +7,10 @@ import no.sintef.dvl.laurin.interfaces.core.ILaurin;
 public class ExtraWheel extends LaurinFeature {
 
 	private static final IFeatureID FEATURE_ID = FeatureIDFacade.eINSTANCE.createFeatureID("extra_wheel");
+	protected final ILaurin<?> model;
 
-	public ExtraWheel(ILaurin model) {
-		super(model);
+	public ExtraWheel(ILaurin<?> _model) {
+		model = _model;
 	}
 
 	@Override
