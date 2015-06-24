@@ -1,4 +1,4 @@
-package no.sintef.dvl.laurin.core;
+package no.sintef.dvl.laurin.featureconfig;
 
 import no.sintef.dvl.core.featureid.FeatureIDFacade;
 import no.sintef.dvl.core.interfaces.featureid.IFeatureID;

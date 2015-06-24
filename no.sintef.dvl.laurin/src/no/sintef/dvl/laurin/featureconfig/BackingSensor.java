@@ -1,15 +1,18 @@
-package no.sintef.dvl.laurin.core;
+package no.sintef.dvl.laurin.featureconfig;
 
 import no.sintef.dvl.core.featureid.FeatureIDFacade;
 import no.sintef.dvl.core.interfaces.featureid.IFeatureID;
 import no.sintef.dvl.laurin.interfaces.core.ILaurin;
 
-public class ExtraWheel extends LaurinFeature {
+/**
+ * The BackingSensor feature
+ */
+public class BackingSensor extends LaurinFeature {
 
-	private static final IFeatureID FEATURE_ID = FeatureIDFacade.eINSTANCE.createFeatureID("extra_wheel");
+	private static final IFeatureID FEATURE_ID = FeatureIDFacade.eINSTANCE.createFeatureID("backing_sensor");
 
-	public ExtraWheel(ILaurin model) {
-		super(model);
+	public BackingSensor(ILaurin car) {
+		super(car);
 	}
 
 	@Override
@@ -19,17 +22,16 @@ public class ExtraWheel extends LaurinFeature {
 
 	@Override
 	public boolean isConfigured() {
-		return model.hasExtraWheel();
+		return model.hasBackingSensor();
 	}
 
 	@Override
 	protected void doConfiguration() {
-		model.enableExtraWheel();
+		model.enableBackingSensor();
 	}
 
 	@Override
 	protected IFeatureID feature() {
 		return FEATURE_ID;
 	}
-
 }

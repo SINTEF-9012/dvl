@@ -2,37 +2,37 @@
 <uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_97_uIAp8EeOlp_CLMd2EmQ" name="model">
   <packagedElement xmi:type="uml:Package" xmi:id="_IZBtsAp9EeOlp_CLMd2EmQ" name="Base">
     <packagedElement xmi:type="uml:Class" xmi:id="_QhSOQAp9EeOlp_CLMd2EmQ" name="Laurin">
-      <ownedAttribute xmi:id="_d2D3AAp9EeOlp_CLMd2EmQ" name="automatic" type="_R6Z9UAp9EeOlp_CLMd2EmQ" aggregation="composite" association="_d2D3Awp9EeOlp_CLMd2EmQ">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_d2D3AAp9EeOlp_CLMd2EmQ" name="automatic" type="_R6Z9UAp9EeOlp_CLMd2EmQ" aggregation="composite" association="_d2D3Awp9EeOlp_CLMd2EmQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d2D3AQp9EeOlp_CLMd2EmQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d2D3Agp9EeOlp_CLMd2EmQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_bSvJMAp-EeOlp_CLMd2EmQ" name="manual" type="_YcoewAp-EeOlp_CLMd2EmQ" aggregation="composite" association="_bSvJMwp-EeOlp_CLMd2EmQ">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_bSvJMAp-EeOlp_CLMd2EmQ" name="manual" type="_YcoewAp-EeOlp_CLMd2EmQ" aggregation="composite" association="_bSvJMwp-EeOlp_CLMd2EmQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bSvJMQp-EeOlp_CLMd2EmQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bSvJMgp-EeOlp_CLMd2EmQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_nMAdQAp-EeOlp_CLMd2EmQ" name="engine" type="_h-wVQAp-EeOlp_CLMd2EmQ" aggregation="composite" association="_nMAdQwp-EeOlp_CLMd2EmQ">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nMAdQAp-EeOlp_CLMd2EmQ" name="engine" type="_h-wVQAp-EeOlp_CLMd2EmQ" aggregation="composite" association="_nMAdQwp-EeOlp_CLMd2EmQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nMAdQQp-EeOlp_CLMd2EmQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nMAdQgp-EeOlp_CLMd2EmQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_qIy-gAp-EeOlp_CLMd2EmQ" name="transmission" type="_jHW8EAp-EeOlp_CLMd2EmQ" aggregation="composite" association="_qIy-gwp-EeOlp_CLMd2EmQ">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qIy-gAp-EeOlp_CLMd2EmQ" name="transmission" type="_jHW8EAp-EeOlp_CLMd2EmQ" aggregation="composite" association="_qIy-gwp-EeOlp_CLMd2EmQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qIy-gQp-EeOlp_CLMd2EmQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qIy-ggp-EeOlp_CLMd2EmQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_ut46UAp-EeOlp_CLMd2EmQ" name="extras" type="_lfG2kAp-EeOlp_CLMd2EmQ" aggregation="composite" association="_ut46Uwp-EeOlp_CLMd2EmQ">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ut46UAp-EeOlp_CLMd2EmQ" name="extras" type="_lfG2kAp-EeOlp_CLMd2EmQ" aggregation="composite" association="_ut46Uwp-EeOlp_CLMd2EmQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ut46UQp-EeOlp_CLMd2EmQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ut46Ugp-EeOlp_CLMd2EmQ" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_R6Z9UAp9EeOlp_CLMd2EmQ" name="Automatic"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_d2D3Awp9EeOlp_CLMd2EmQ" name="" memberEnd="_d2D3BAp9EeOlp_CLMd2EmQ _d2D3AAp9EeOlp_CLMd2EmQ">
-      <ownedEnd xmi:id="_d2D3BAp9EeOlp_CLMd2EmQ" name="" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_d2D3Awp9EeOlp_CLMd2EmQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_d2D3BAp9EeOlp_CLMd2EmQ" name="" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_d2D3Awp9EeOlp_CLMd2EmQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d2D3BQp9EeOlp_CLMd2EmQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d2D3Bgp9EeOlp_CLMd2EmQ" value="1"/>
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_YcoewAp-EeOlp_CLMd2EmQ" name="Manual"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_bSvJMwp-EeOlp_CLMd2EmQ" name="" memberEnd="_bSvJNAp-EeOlp_CLMd2EmQ _bSvJMAp-EeOlp_CLMd2EmQ">
-      <ownedEnd xmi:id="_bSvJNAp-EeOlp_CLMd2EmQ" name="" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_bSvJMwp-EeOlp_CLMd2EmQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_bSvJNAp-EeOlp_CLMd2EmQ" name="" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_bSvJMwp-EeOlp_CLMd2EmQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bSvJNQp-EeOlp_CLMd2EmQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bSvJNgp-EeOlp_CLMd2EmQ" value="1"/>
       </ownedEnd>
@@ -40,40 +40,95 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_h-wVQAp-EeOlp_CLMd2EmQ" name="Engine"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_jHW8EAp-EeOlp_CLMd2EmQ" name="Transmission"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_lfG2kAp-EeOlp_CLMd2EmQ" name="Extras">
-      <ownedAttribute xmi:id="_Py7okAp_EeOlp_CLMd2EmQ" name="extraItem" type="_NSGqkAp_EeOlp_CLMd2EmQ" aggregation="composite" association="_Py7okwp_EeOlp_CLMd2EmQ">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Py7okAp_EeOlp_CLMd2EmQ" name="extraItem" type="_NSGqkAp_EeOlp_CLMd2EmQ" aggregation="composite" association="_Py7okwp_EeOlp_CLMd2EmQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Py7okQp_EeOlp_CLMd2EmQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Py7okgp_EeOlp_CLMd2EmQ" value="*"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_nMAdQwp-EeOlp_CLMd2EmQ" name="laurin_engine_1" memberEnd="_nMAdRAp-EeOlp_CLMd2EmQ _nMAdQAp-EeOlp_CLMd2EmQ">
-      <ownedEnd xmi:id="_nMAdRAp-EeOlp_CLMd2EmQ" name="laurin" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_nMAdQwp-EeOlp_CLMd2EmQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_nMAdRAp-EeOlp_CLMd2EmQ" name="laurin" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_nMAdQwp-EeOlp_CLMd2EmQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nMAdRQp-EeOlp_CLMd2EmQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nMAdRgp-EeOlp_CLMd2EmQ" value="1"/>
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_qIy-gwp-EeOlp_CLMd2EmQ" name="laurin_transmission_1" memberEnd="_qIy-hAp-EeOlp_CLMd2EmQ _qIy-gAp-EeOlp_CLMd2EmQ">
-      <ownedEnd xmi:id="_qIy-hAp-EeOlp_CLMd2EmQ" name="laurin" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_qIy-gwp-EeOlp_CLMd2EmQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_qIy-hAp-EeOlp_CLMd2EmQ" name="laurin" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_qIy-gwp-EeOlp_CLMd2EmQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qIy-hQp-EeOlp_CLMd2EmQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qIy-hgp-EeOlp_CLMd2EmQ" value="1"/>
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ut46Uwp-EeOlp_CLMd2EmQ" name="laurin_extras_1" memberEnd="_ut46VAp-EeOlp_CLMd2EmQ _ut46UAp-EeOlp_CLMd2EmQ">
-      <ownedEnd xmi:id="_ut46VAp-EeOlp_CLMd2EmQ" name="laurin" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_ut46Uwp-EeOlp_CLMd2EmQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ut46VAp-EeOlp_CLMd2EmQ" name="laurin" type="_QhSOQAp9EeOlp_CLMd2EmQ" association="_ut46Uwp-EeOlp_CLMd2EmQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ut46VQp-EeOlp_CLMd2EmQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ut46Vgp-EeOlp_CLMd2EmQ" value="1"/>
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_zP_zkAp-EeOlp_CLMd2EmQ" name="WD2">
-      <generalization xmi:id="_4FcfkAp-EeOlp_CLMd2EmQ" general="_jHW8EAp-EeOlp_CLMd2EmQ"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_4FcfkAp-EeOlp_CLMd2EmQ" general="_jHW8EAp-EeOlp_CLMd2EmQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_1VlnEAp-EeOlp_CLMd2EmQ" name="WD4">
-      <generalization xmi:id="_5FHM0Ap-EeOlp_CLMd2EmQ" general="_jHW8EAp-EeOlp_CLMd2EmQ"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_5FHM0Ap-EeOlp_CLMd2EmQ" general="_jHW8EAp-EeOlp_CLMd2EmQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_NSGqkAp_EeOlp_CLMd2EmQ" name="ExtraItem"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_Py7okwp_EeOlp_CLMd2EmQ" name="extras_extraItem_1" memberEnd="_Py7olAp_EeOlp_CLMd2EmQ _Py7okAp_EeOlp_CLMd2EmQ">
-      <ownedEnd xmi:id="_Py7olAp_EeOlp_CLMd2EmQ" name="extras" type="_lfG2kAp-EeOlp_CLMd2EmQ" association="_Py7okwp_EeOlp_CLMd2EmQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Py7olAp_EeOlp_CLMd2EmQ" name="extras" type="_lfG2kAp-EeOlp_CLMd2EmQ" association="_Py7okwp_EeOlp_CLMd2EmQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Py7olQp_EeOlp_CLMd2EmQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Py7olgp_EeOlp_CLMd2EmQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_LKqH0Ap9EeOlp_CLMd2EmQ" name="Library">
+    <packagedElement xmi:type="uml:Class" xmi:id="_CT5QkAp_EeOlp_CLMd2EmQ" name="Engine"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Daj9sAp_EeOlp_CLMd2EmQ" name="hp110">
+      <generalization xmi:type="uml:Generalization" xmi:id="_GzxVMAp_EeOlp_CLMd2EmQ" general="_CT5QkAp_EeOlp_CLMd2EmQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EjKkgAp_EeOlp_CLMd2EmQ" name="hp140">
+      <generalization xmi:type="uml:Generalization" xmi:id="_HP5QgAp_EeOlp_CLMd2EmQ" general="_CT5QkAp_EeOlp_CLMd2EmQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_I8pGMAp_EeOlp_CLMd2EmQ" name="Extras2">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_b5x24AqFEeOlp_CLMd2EmQ" name="parkingAssist" type="_YNYdoAqFEeOlp_CLMd2EmQ" aggregation="composite" association="_b5x24wqFEeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b5x24QqFEeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b5x24gqFEeOlp_CLMd2EmQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dTfb0AqFEeOlp_CLMd2EmQ" name="backingSensors" type="_aIth4AqFEeOlp_CLMd2EmQ" aggregation="composite" association="_dTfb0wqFEeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dTfb0QqFEeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dTfb0gqFEeOlp_CLMd2EmQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_hHxlwAqFEeOlp_CLMd2EmQ" name="doubleTrunk" type="_fFchoAqFEeOlp_CLMd2EmQ" aggregation="composite" association="_hHxlwwqFEeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hHxlwQqFEeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hHxlwgqFEeOlp_CLMd2EmQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lcC3UAqFEeOlp_CLMd2EmQ" name="extraWheel" type="_j81HUAqFEeOlp_CLMd2EmQ" aggregation="composite" association="_lcC3UwqFEeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lcC3UQqFEeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lcC3UgqFEeOlp_CLMd2EmQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YNYdoAqFEeOlp_CLMd2EmQ" name="ParkingAssist"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aIth4AqFEeOlp_CLMd2EmQ" name="BackingSensors"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_b5x24wqFEeOlp_CLMd2EmQ" name="extras2_parkingAssist_1" memberEnd="_b5x25AqFEeOlp_CLMd2EmQ _b5x24AqFEeOlp_CLMd2EmQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_b5x25AqFEeOlp_CLMd2EmQ" name="extras2" type="_I8pGMAp_EeOlp_CLMd2EmQ" association="_b5x24wqFEeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b5x25QqFEeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b5x25gqFEeOlp_CLMd2EmQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dTfb0wqFEeOlp_CLMd2EmQ" name="extras2_backingSensors_1" memberEnd="_dTfb1AqFEeOlp_CLMd2EmQ _dTfb0AqFEeOlp_CLMd2EmQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dTfb1AqFEeOlp_CLMd2EmQ" name="extras2" type="_I8pGMAp_EeOlp_CLMd2EmQ" association="_dTfb0wqFEeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dTfb1QqFEeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dTfb1gqFEeOlp_CLMd2EmQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fFchoAqFEeOlp_CLMd2EmQ" name="DoubleTrunk"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_hHxlwwqFEeOlp_CLMd2EmQ" name="extras2_doubleTrunk_1" memberEnd="_hHxlxAqFEeOlp_CLMd2EmQ _hHxlwAqFEeOlp_CLMd2EmQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_hHxlxAqFEeOlp_CLMd2EmQ" name="extras2" type="_I8pGMAp_EeOlp_CLMd2EmQ" association="_hHxlwwqFEeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hHxlxQqFEeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hHxlxgqFEeOlp_CLMd2EmQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_j81HUAqFEeOlp_CLMd2EmQ" name="ExtraWheel"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lcC3UwqFEeOlp_CLMd2EmQ" name="extras2_extraWheel_1" memberEnd="_lcC3VAqFEeOlp_CLMd2EmQ _lcC3UAqFEeOlp_CLMd2EmQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_lcC3VAqFEeOlp_CLMd2EmQ" name="extras2" type="_I8pGMAp_EeOlp_CLMd2EmQ" association="_lcC3UwqFEeOlp_CLMd2EmQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lcC3VQqFEeOlp_CLMd2EmQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lcC3VgqFEeOlp_CLMd2EmQ" value="1"/>
       </ownedEnd>
     </packagedElement>
   </packagedElement>
