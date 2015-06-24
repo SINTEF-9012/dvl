@@ -43,8 +43,12 @@ public class Engine140hpAPIUML implements IEngine140hpAPI {
 	 * ()
 	 */
 	public boolean isEngineConfigurable() {
-		// TODO Auto-generated method stub
-		return false;
+		Package base = Utilities.findLaurinBasePackage(laurin);
+		if (base == null)
+			return false;
+
+		Class klass = Utilities.findClassIn(base, BASE_ENGINE_CLASS);
+		return Utilities.hasExtra(laurin, BASE_ENGINE_CLASS, BASE_ENGINE_PROPERTY) && klass != null;
 	}
 
 	/*
@@ -54,8 +58,10 @@ public class Engine140hpAPIUML implements IEngine140hpAPI {
 	 * no.sintef.dvl.laurin.interfaces.api.IEngine140hpAPI#enable140hpEngine()
 	 */
 	public void enable140hpEngine() {
-		// TODO Auto-generated method stub
-
+		Package base = Utilities.findLaurinBasePackage(laurin);
+		Class klass = Utilities.createClass(base, BASE_ENGINE_HP140_CLASS);
+		Class baseKlass = Utilities.findClassIn(base, BASE_ENGINE_CLASS);
+		klass.createGeneralization(baseKlass);
 	}
 
 	/*
