@@ -18,16 +18,7 @@ import org.eclipse.uml2.uml.UMLPackage;
 public class Utilities {
 
 	private static final String LAURIN_CLASS_NAME = "Laurin";
-	private static final String BACKING_SENSOR_CLASS = "BackingSensor";
-	private static final String BACKING_SENSOR_PROPERTY = "backingSensor";
-	private static final String PARKING_ASSIST_CLASS = "ParkingAssist";
-	private static final String PARKING_ASSIST_PROPERTY = "parkingAssist";
-	private static final String EXTRA_WHEEL_CLASS = "ExtraWheel";
-	private static final String EXTRA_WHEEL_PROPERTY = "extraWheel";
 	private static final String BASE_PACKAGE = "Base";
-	private static final String BASE_ENGINE_CLASS = "Engine";
-	private static final String BASE_ENGINE_PROPERTY = "engine";
-	private static final String BASE_ENGINE_HP140_CLASS = "hp140";
 
 	public static Package findLaurinBasePackage(Model laurin) {
 		return (Package) laurin.getPackagedElement(BASE_PACKAGE);
