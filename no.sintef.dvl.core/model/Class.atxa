@@ -1,0 +1,653 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#model_slClass.atxa> a atxa-core:reloFile .
+
+atxa:DetailNode atxa-core:detailLevel "0" .
+
+atxa-core:docRoot atxa-core:browseModel "com.architexa.diagrams.relo.jdt/com.architexa.diagrams.relo.jdt.browse.ClassStrucBrowseModel" ;
+	atxa-core:contains _:node1a8o0svrpx5 .
+
+_:node1a8o0svrpx5 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig> ;
+	atxa-core:posX "450" ;
+	atxa-core:posY "600" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$LaurinFeature> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk> .
+
+_:node1a8o0svrpx5 atxa-core:contains _:node1a8o0svrpx17613 .
+
+_:node1a8o0svrpx17613 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$LaurinFeature> ;
+	atxa-core:posX "807" ;
+	atxa-core:posY "625" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$LaurinFeature> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$LaurinFeature.doConfiguration()> .
+
+_:node1a8o0svrpx5467 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node1a8o0svrpx17613 ;
+	rdf:object _:node1a8o0svrpx17614 ;
+	atxa-core:bendpoint _:node1a8o0svrpx17615 .
+
+_:node1a8o0svrpx17615 atxa-core:bpLocation "891,567" ;
+	atxa-core:bpIndex "0" .
+
+_:node1a8o0svrpx17613 atxa-core:contains _:node1a8o0svrpx17616 .
+
+_:node1a8o0svrpx17616 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$LaurinFeature.doConfiguration()> ;
+	atxa-core:posX "808" ;
+	atxa-core:posY "643" .
+
+_:node1a8o0svrpx5 atxa-core:contains _:node1a8o0svrpx17617 .
+
+_:node1a8o0svrpx17617 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor> ;
+	atxa-core:posX "835" ;
+	atxa-core:posY "703" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.<clinit\>()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.api> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.BackingSensor(IBackingSensorAPI,)> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.doConfiguration()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.FEATURE_ID> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.feature()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.isConfigurable()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.isConfigured()> .
+
+_:node1a8o0svrpx35 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node1a8o0svrpx17617 ;
+	rdf:object _:node1a8o0svrpx17613 ;
+	atxa-core:bendpoint _:node1a8o0svrpx17618 .
+
+_:node1a8o0svrpx17618 atxa-core:bpLocation "1019,680" ;
+	atxa-core:bpIndex "0" .
+
+_:node1a8o0svrpx35 atxa-core:bendpoint _:node1a8o0svrpx17619 .
+
+_:node1a8o0svrpx17619 atxa-core:bpLocation "891,680" ;
+	atxa-core:bpIndex "1" .
+
+_:node1a8o0svrpx17617 atxa-core:contains _:node1a8o0svrpx17620 .
+
+_:node1a8o0svrpx17620 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.<clinit\>()> ;
+	atxa-core:posX "836" ;
+	atxa-core:posY "753" .
+
+_:node1a8o0svrpx17617 atxa-core:contains _:node1a8o0svrpx17621 .
+
+_:node1a8o0svrpx17621 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.api> ;
+	atxa-core:posX "836" ;
+	atxa-core:posY "721" .
+
+_:node1a8o0svrpx17617 atxa-core:contains _:node1a8o0svrpx17622 .
+
+_:node1a8o0svrpx17622 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.BackingSensor(IBackingSensorAPI,)> ;
+	atxa-core:posX "836" ;
+	atxa-core:posY "769" .
+
+_:node1a8o0svrpx17617 atxa-core:contains _:node1a8o0svrpx17623 .
+
+_:node1a8o0svrpx17623 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.doConfiguration()> ;
+	atxa-core:posX "836" ;
+	atxa-core:posY "785" .
+
+_:node1a8o0svrpx17617 atxa-core:contains _:node1a8o0svrpx17624 .
+
+_:node1a8o0svrpx17624 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.FEATURE_ID> ;
+	atxa-core:posX "836" ;
+	atxa-core:posY "737" .
+
+_:node1a8o0svrpx17617 atxa-core:contains _:node1a8o0svrpx17625 .
+
+_:node1a8o0svrpx17625 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.feature()> ;
+	atxa-core:posX "836" ;
+	atxa-core:posY "801" .
+
+_:node1a8o0svrpx17617 atxa-core:contains _:node1a8o0svrpx17626 .
+
+_:node1a8o0svrpx17626 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.isConfigurable()> ;
+	atxa-core:posX "836" ;
+	atxa-core:posY "817" .
+
+_:node1a8o0svrpx17617 atxa-core:contains _:node1a8o0svrpx17627 .
+
+_:node1a8o0svrpx17627 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$BackingSensor.isConfigured()> ;
+	atxa-core:posX "836" ;
+	atxa-core:posY "833" .
+
+_:node1a8o0svrpx5 atxa-core:contains _:node1a8o0svrpx17628 .
+
+_:node1a8o0svrpx17628 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk> ;
+	atxa-core:posX "456" ;
+	atxa-core:posY "706" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.api> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.<clinit\>()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.doConfiguration()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.DoubleTrunk(IDoubleTrunkAPI,)> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.FEATURE_ID> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.feature()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.isConfigured()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.isConfigurable()> .
+
+_:node1a8o0svrpx36 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node1a8o0svrpx17628 ;
+	rdf:object _:node1a8o0svrpx17613 ;
+	atxa-core:bendpoint _:node1a8o0svrpx17629 .
+
+_:node1a8o0svrpx17629 atxa-core:bpLocation "640,680" ;
+	atxa-core:bpIndex "0" .
+
+_:node1a8o0svrpx36 atxa-core:bendpoint _:node1a8o0svrpx17630 .
+
+_:node1a8o0svrpx17630 atxa-core:bpLocation "891,680" ;
+	atxa-core:bpIndex "1" .
+
+_:node1a8o0svrpx17628 atxa-core:contains _:node1a8o0svrpx17631 .
+
+_:node1a8o0svrpx17631 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.api> ;
+	atxa-core:posX "457" ;
+	atxa-core:posY "724" .
+
+_:node1a8o0svrpx17628 atxa-core:contains _:node1a8o0svrpx17632 .
+
+_:node1a8o0svrpx17632 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.<clinit\>()> ;
+	atxa-core:posX "457" ;
+	atxa-core:posY "756" .
+
+_:node1a8o0svrpx17628 atxa-core:contains _:node1a8o0svrpx17633 .
+
+_:node1a8o0svrpx17633 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.doConfiguration()> ;
+	atxa-core:posX "457" ;
+	atxa-core:posY "772" .
+
+_:node1a8o0svrpx14056 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1a8o0svrpx17633 ;
+	rdf:object _:node1a8o0svrpx17634 .
+
+_:node1a8o0svrpx17628 atxa-core:contains _:node1a8o0svrpx17635 .
+
+_:node1a8o0svrpx17635 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.DoubleTrunk(IDoubleTrunkAPI,)> ;
+	atxa-core:posX "457" ;
+	atxa-core:posY "788" .
+
+_:node1a8o0svrpx17628 atxa-core:contains _:node1a8o0svrpx17636 .
+
+_:node1a8o0svrpx17636 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.FEATURE_ID> ;
+	atxa-core:posX "457" ;
+	atxa-core:posY "740" .
+
+_:node1a8o0svrpx17628 atxa-core:contains _:node1a8o0svrpx17637 .
+
+_:node1a8o0svrpx17637 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.feature()> ;
+	atxa-core:posX "457" ;
+	atxa-core:posY "804" .
+
+_:node1a8o0svrpx17628 atxa-core:contains _:node1a8o0svrpx17638 .
+
+_:node1a8o0svrpx17638 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.isConfigured()> ;
+	atxa-core:posX "457" ;
+	atxa-core:posY "820" .
+
+_:node1a8o0svrpx17628 atxa-core:contains _:node1a8o0svrpx17639 .
+
+_:node1a8o0svrpx17639 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.featureconfig$DoubleTrunk.isConfigurable()> ;
+	atxa-core:posX "457" ;
+	atxa-core:posY "836" .
+
+atxa-core:docRoot atxa-core:contains _:node1a8o0svrpx17640 .
+
+_:node1a8o0svrpx17640 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api> ;
+	atxa-core:posX "-233" ;
+	atxa-core:posY "477" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IBackingSensorAPI> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IDoubleTrunkAPI> .
+
+_:node1a8o0svrpx17640 atxa-core:contains _:node1a8o0svrpx17641 .
+
+_:node1a8o0svrpx17641 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IBackingSensorAPI> ;
+	atxa-core:posX "-227" ;
+	atxa-core:posY "502" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IBackingSensorAPI> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IBackingSensorAPI.enableBackingSensor()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IBackingSensorAPI.hasBackingSensor()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IBackingSensorAPI.isLaurinCar()> .
+
+_:node1a8o0svrpx17641 atxa-core:contains _:node1a8o0svrpx17642 .
+
+_:node1a8o0svrpx17642 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IBackingSensorAPI.enableBackingSensor()> ;
+	atxa-core:posX "-226" ;
+	atxa-core:posY "520" .
+
+_:node1a8o0svrpx17641 atxa-core:contains _:node1a8o0svrpx17643 .
+
+_:node1a8o0svrpx17643 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IBackingSensorAPI.hasBackingSensor()> ;
+	atxa-core:posX "-226" ;
+	atxa-core:posY "536" .
+
+_:node1a8o0svrpx17641 atxa-core:contains _:node1a8o0svrpx17644 .
+
+_:node1a8o0svrpx17644 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IBackingSensorAPI.isLaurinCar()> ;
+	atxa-core:posX "-226" ;
+	atxa-core:posY "552" .
+
+_:node1a8o0svrpx17640 atxa-core:contains _:node1a8o0svrpx17645 .
+
+_:node1a8o0svrpx17645 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IDoubleTrunkAPI> ;
+	atxa-core:posX "-9" ;
+	atxa-core:posY "502" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IDoubleTrunkAPI> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IDoubleTrunkAPI.enableDoubleTrunk()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IDoubleTrunkAPI.hasDoubleTrunk()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IDoubleTrunkAPI.isLaurinCar()> .
+
+_:node1a8o0svrpx17645 atxa-core:contains _:node1a8o0svrpx17634 .
+
+_:node1a8o0svrpx17634 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IDoubleTrunkAPI.enableDoubleTrunk()> ;
+	atxa-core:posX "-8" ;
+	atxa-core:posY "520" .
+
+_:node1a8o0svrpx17645 atxa-core:contains _:node1a8o0svrpx17646 .
+
+_:node1a8o0svrpx17646 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IDoubleTrunkAPI.hasDoubleTrunk()> ;
+	atxa-core:posX "-8" ;
+	atxa-core:posY "536" .
+
+_:node1a8o0svrpx17645 atxa-core:contains _:node1a8o0svrpx17647 .
+
+_:node1a8o0svrpx17647 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.api$IDoubleTrunkAPI.isLaurinCar()> ;
+	atxa-core:posX "-8" ;
+	atxa-core:posY "552" .
+
+atxa-core:docRoot atxa-core:contains _:node1a8o0svrpx17648 .
+
+_:node1a8o0svrpx17648 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.core> ;
+	atxa-core:posX "1892" ;
+	atxa-core:posY "656" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.core> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.core$ILaurin> .
+
+_:node1a8o0svrpx17648 atxa-core:contains _:node1a8o0svrpx17649 .
+
+_:node1a8o0svrpx17649 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.interfaces.core$ILaurin> ;
+	atxa-core:posX "1898" ;
+	atxa-core:posY "681" .
+
+atxa-core:docRoot atxa-core:contains _:node1a8o0svrpx17650 .
+
+_:node1a8o0svrpx17650 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.featureid> ;
+	atxa-core:posX "1282" ;
+	atxa-core:posY "462" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.featureid> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.featureid$FeatureID> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.featureid$FeatureIDFactory> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.featureid$FeatureIDFacade> .
+
+_:node1a8o0svrpx17650 atxa-core:contains _:node1a8o0svrpx17651 .
+
+_:node1a8o0svrpx17651 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.featureid$FeatureID> ;
+	atxa-core:posX "1288" ;
+	atxa-core:posY "487" .
+
+_:node1a8o0svrpx4249 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node1a8o0svrpx17651 ;
+	rdf:object _:node1a8o0svrpx17652 ;
+	atxa-core:bendpoint _:node1a8o0svrpx17653 .
+
+_:node1a8o0svrpx17653 atxa-core:bpLocation "1335,184" ;
+	atxa-core:bpIndex "0" .
+
+_:node1a8o0svrpx4249 atxa-core:bendpoint _:node1a8o0svrpx17654 .
+
+_:node1a8o0svrpx17654 atxa-core:bpLocation "1309,184" ;
+	atxa-core:bpIndex "1" .
+
+_:node1a8o0svrpx17650 atxa-core:contains _:node1a8o0svrpx17655 .
+
+_:node1a8o0svrpx17655 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.featureid$FeatureIDFactory> ;
+	atxa-core:posX "1854" ;
+	atxa-core:posY "508" .
+
+_:node1a8o0svrpx4383 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node1a8o0svrpx17655 ;
+	rdf:object _:node1a8o0svrpx17656 ;
+	atxa-core:bendpoint _:node1a8o0svrpx17657 .
+
+_:node1a8o0svrpx17657 atxa-core:bpLocation "1921,288" ;
+	atxa-core:bpIndex "0" .
+
+_:node1a8o0svrpx4383 atxa-core:bendpoint _:node1a8o0svrpx17658 .
+
+_:node1a8o0svrpx17658 atxa-core:bpLocation "1754,288" ;
+	atxa-core:bpIndex "1" .
+
+_:node1a8o0svrpx17650 atxa-core:contains _:node1a8o0svrpx17659 .
+
+_:node1a8o0svrpx17659 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.featureid$FeatureIDFacade> ;
+	atxa-core:posX "1638" ;
+	atxa-core:posY "489" .
+
+atxa-core:docRoot atxa-core:contains _:node1a8o0svrpx17660 .
+
+_:node1a8o0svrpx17660 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api> ;
+	atxa-core:posX "-375" ;
+	atxa-core:posY "668" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML> .
+
+_:node1a8o0svrpx17660 atxa-core:contains _:node1a8o0svrpx17661 .
+
+_:node1a8o0svrpx17661 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML> ;
+	atxa-core:posX "-34" ;
+	atxa-core:posY "693" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.DOUBLE_TRUNK_CLASS> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.DOUBLE_TRUNK_PROPERTY> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.DoubleTrunkAPIUML(Model,)> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.enableDoubleTrunk()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.hasDoubleTrunk()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.isLaurinCar()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.laurin> .
+
+_:node1a8o0svrpx2864 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node1a8o0svrpx17661 ;
+	rdf:object _:node1a8o0svrpx17645 ;
+	atxa-core:bendpoint _:node1a8o0svrpx17662 .
+
+_:node1a8o0svrpx17662 atxa-core:bpLocation "107,589" ;
+	atxa-core:bpIndex "0" .
+
+_:node1a8o0svrpx2864 atxa-core:bendpoint _:node1a8o0svrpx17663 .
+
+_:node1a8o0svrpx17663 atxa-core:bpLocation "85,589" ;
+	atxa-core:bpIndex "1" .
+
+_:node1a8o0svrpx17661 atxa-core:contains _:node1a8o0svrpx17664 .
+
+_:node1a8o0svrpx17664 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.DOUBLE_TRUNK_CLASS> ;
+	atxa-core:posX "-33" ;
+	atxa-core:posY "711" .
+
+_:node1a8o0svrpx17661 atxa-core:contains _:node1a8o0svrpx17665 .
+
+_:node1a8o0svrpx17665 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.DOUBLE_TRUNK_PROPERTY> ;
+	atxa-core:posX "-33" ;
+	atxa-core:posY "727" .
+
+_:node1a8o0svrpx17661 atxa-core:contains _:node1a8o0svrpx17666 .
+
+_:node1a8o0svrpx17666 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.DoubleTrunkAPIUML(Model,)> ;
+	atxa-core:posX "-33" ;
+	atxa-core:posY "759" .
+
+_:node1a8o0svrpx17661 atxa-core:contains _:node1a8o0svrpx17667 .
+
+_:node1a8o0svrpx17667 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.enableDoubleTrunk()> ;
+	atxa-core:posX "-33" ;
+	atxa-core:posY "775" .
+
+_:node1a8o0svrpx17661 atxa-core:contains _:node1a8o0svrpx17668 .
+
+_:node1a8o0svrpx17668 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.hasDoubleTrunk()> ;
+	atxa-core:posX "-33" ;
+	atxa-core:posY "791" .
+
+_:node1a8o0svrpx17661 atxa-core:contains _:node1a8o0svrpx17669 .
+
+_:node1a8o0svrpx17669 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.isLaurinCar()> ;
+	atxa-core:posX "-33" ;
+	atxa-core:posY "807" .
+
+_:node1a8o0svrpx17661 atxa-core:contains _:node1a8o0svrpx17670 .
+
+_:node1a8o0svrpx17670 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$DoubleTrunkAPIUML.laurin> ;
+	atxa-core:posX "-33" ;
+	atxa-core:posY "743" .
+
+_:node1a8o0svrpx17660 atxa-core:contains _:node1a8o0svrpx17671 .
+
+_:node1a8o0svrpx17671 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML> ;
+	atxa-core:posX "-369" ;
+	atxa-core:posY "698" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.BACKING_SENSOR_CLASS> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.BACKING_SENSOR_PROPERTY> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.BackingSensorAPIUML(Model,)> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.enableBackingSensor()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.hasBackingSensor()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.isLaurinCar()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.laurin> .
+
+_:node1a8o0svrpx2482 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node1a8o0svrpx17671 ;
+	rdf:object _:node1a8o0svrpx17641 ;
+	atxa-core:bendpoint _:node1a8o0svrpx17672 .
+
+_:node1a8o0svrpx17672 atxa-core:bpLocation "-222,589" ;
+	atxa-core:bpIndex "0" .
+
+_:node1a8o0svrpx2482 atxa-core:bendpoint _:node1a8o0svrpx17673 .
+
+_:node1a8o0svrpx17673 atxa-core:bpLocation "-129,589" ;
+	atxa-core:bpIndex "1" .
+
+_:node1a8o0svrpx17671 atxa-core:contains _:node1a8o0svrpx17674 .
+
+_:node1a8o0svrpx17674 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.BACKING_SENSOR_CLASS> ;
+	atxa-core:posX "-368" ;
+	atxa-core:posY "716" .
+
+_:node1a8o0svrpx17671 atxa-core:contains _:node1a8o0svrpx17675 .
+
+_:node1a8o0svrpx17675 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.BACKING_SENSOR_PROPERTY> ;
+	atxa-core:posX "-368" ;
+	atxa-core:posY "732" .
+
+_:node1a8o0svrpx17671 atxa-core:contains _:node1a8o0svrpx17676 .
+
+_:node1a8o0svrpx17676 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.BackingSensorAPIUML(Model,)> ;
+	atxa-core:posX "-368" ;
+	atxa-core:posY "764" .
+
+_:node1a8o0svrpx17671 atxa-core:contains _:node1a8o0svrpx17677 .
+
+_:node1a8o0svrpx17677 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.enableBackingSensor()> ;
+	atxa-core:posX "-368" ;
+	atxa-core:posY "780" .
+
+_:node1a8o0svrpx17671 atxa-core:contains _:node1a8o0svrpx17678 .
+
+_:node1a8o0svrpx17678 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.hasBackingSensor()> ;
+	atxa-core:posX "-368" ;
+	atxa-core:posY "796" .
+
+_:node1a8o0svrpx17671 atxa-core:contains _:node1a8o0svrpx17679 .
+
+_:node1a8o0svrpx17679 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.isLaurinCar()> ;
+	atxa-core:posX "-368" ;
+	atxa-core:posY "812" .
+
+_:node1a8o0svrpx17671 atxa-core:contains _:node1a8o0svrpx17680 .
+
+_:node1a8o0svrpx17680 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.laurin.uml.api$BackingSensorAPIUML.laurin> ;
+	atxa-core:posX "-368" ;
+	atxa-core:posY "748" .
+
+atxa-core:docRoot atxa-core:contains _:node1a8o0svrpx17681 .
+
+_:node1a8o0svrpx17681 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.featureid> ;
+	atxa-core:posX "1254" ;
+	atxa-core:posY "105" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.featureid> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.featureid$IFeatureID> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.featureid$IFeatureIDFactory> .
+
+_:node1a8o0svrpx17681 atxa-core:contains _:node1a8o0svrpx17652 .
+
+_:node1a8o0svrpx17652 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.featureid$IFeatureID> ;
+	atxa-core:posX "1260" ;
+	atxa-core:posY "130" .
+
+_:node1a8o0svrpx17681 atxa-core:contains _:node1a8o0svrpx17656 .
+
+_:node1a8o0svrpx17656 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.featureid$IFeatureIDFactory> ;
+	atxa-core:posX "1685" ;
+	atxa-core:posY "234" .
+
+atxa-core:docRoot atxa-core:contains _:node1a8o0svrpx17682 .
+
+_:node1a8o0svrpx17682 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common> ;
+	atxa-core:posX "776" ;
+	atxa-core:posY "391" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig> .
+
+_:node1a8o0svrpx17682 atxa-core:contains _:node1a8o0svrpx17614 .
+
+_:node1a8o0svrpx17614 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig> ;
+	atxa-core:posX "782" ;
+	atxa-core:posY "416" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.configure()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.configure(IExecutionResult,)> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.isConfigurable()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.isConfigured()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.post(IExecutionResult,)> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.pre(IExecutionResult,)> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.relateTo(IFeatureID,)> .
+
+_:node1a8o0svrpx17614 atxa-core:contains _:node1a8o0svrpx17683 .
+
+_:node1a8o0svrpx17683 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.configure()> ;
+	atxa-core:posX "783" ;
+	atxa-core:posY "434" .
+
+_:node1a8o0svrpx17614 atxa-core:contains _:node1a8o0svrpx17684 .
+
+_:node1a8o0svrpx17684 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.configure(IExecutionResult,)> ;
+	atxa-core:posX "783" ;
+	atxa-core:posY "450" .
+
+_:node1a8o0svrpx17614 atxa-core:contains _:node1a8o0svrpx17685 .
+
+_:node1a8o0svrpx17685 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.isConfigurable()> ;
+	atxa-core:posX "783" ;
+	atxa-core:posY "466" .
+
+_:node1a8o0svrpx17614 atxa-core:contains _:node1a8o0svrpx17686 .
+
+_:node1a8o0svrpx17686 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.isConfigured()> ;
+	atxa-core:posX "783" ;
+	atxa-core:posY "482" .
+
+_:node1a8o0svrpx17614 atxa-core:contains _:node1a8o0svrpx17687 .
+
+_:node1a8o0svrpx17687 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.post(IExecutionResult,)> ;
+	atxa-core:posX "783" ;
+	atxa-core:posY "498" .
+
+_:node1a8o0svrpx17614 atxa-core:contains _:node1a8o0svrpx17688 .
+
+_:node1a8o0svrpx17688 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.pre(IExecutionResult,)> ;
+	atxa-core:posX "783" ;
+	atxa-core:posY "514" .
+
+_:node1a8o0svrpx17614 atxa-core:contains _:node1a8o0svrpx17689 .
+
+_:node1a8o0svrpx17689 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.core.interfaces.common$IFeatureConfig.relateTo(IFeatureID,)> ;
+	atxa-core:posX "783" ;
+	atxa-core:posY "530" .
+
+atxa-core:docRoot atxa-core:contains _:node1a8o0svrpx17690 .
+
+_:node1a8o0svrpx17690 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine.inferfaces.core> ;
+	atxa-core:posX "1125" ;
+	atxa-core:posY "907" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine.inferfaces.core> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine.inferfaces.core$IEngine> .
+
+_:node1a8o0svrpx17690 atxa-core:contains _:node1a8o0svrpx17691 .
+
+_:node1a8o0svrpx17691 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine.inferfaces.core$IEngine> ;
+	atxa-core:posX "1131" ;
+	atxa-core:posY "932" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine.inferfaces.core$IEngine> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine.inferfaces.core$IEngine.run()> , <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine.inferfaces.core$IEngine.setFeatureConfigurators(List,)> .
+
+_:node1a8o0svrpx17691 atxa-core:contains _:node1a8o0svrpx17692 .
+
+_:node1a8o0svrpx17692 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine.inferfaces.core$IEngine.run()> ;
+	atxa-core:posX "1132" ;
+	atxa-core:posY "950" .
+
+_:node1a8o0svrpx17691 atxa-core:contains _:node1a8o0svrpx17693 .
+
+_:node1a8o0svrpx17693 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine.inferfaces.core$IEngine.setFeatureConfigurators(List,)> ;
+	atxa-core:posX "1132" ;
+	atxa-core:posY "966" .
+
+atxa-core:docRoot atxa-core:contains _:node1a8o0svrpx17694 .
+
+_:node1a8o0svrpx17694 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine> ;
+	atxa-core:posX "1438" ;
+	atxa-core:posY "726" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine$Engine> .
+
+_:node1a8o0svrpx17694 atxa-core:contains _:node1a8o0svrpx17695 .
+
+_:node1a8o0svrpx17695 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#no.sintef.dvl.engine$Engine> ;
+	atxa-core:posX "1444" ;
+	atxa-core:posY "751" .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#model_slClass.atxa> a atxa-core:reloFile ;
+	atxa-core:contains _:node1a8o0svrpx17616 , _:node1a8o0svrpx17613 , _:node1a8o0svrpx17620 , _:node1a8o0svrpx17621 , _:node1a8o0svrpx17622 , _:node1a8o0svrpx17623 , _:node1a8o0svrpx17624 , _:node1a8o0svrpx17625 , _:node1a8o0svrpx17626 , _:node1a8o0svrpx17627 , _:node1a8o0svrpx17617 , _:node1a8o0svrpx17631 , _:node1a8o0svrpx17632 , _:node1a8o0svrpx17633 , _:node1a8o0svrpx17635 , _:node1a8o0svrpx17636 , _:node1a8o0svrpx17637 , _:node1a8o0svrpx17638 , _:node1a8o0svrpx17639 , _:node1a8o0svrpx17628 , _:node1a8o0svrpx5 , _:node1a8o0svrpx17642 , _:node1a8o0svrpx17643 , _:node1a8o0svrpx17644 , _:node1a8o0svrpx17641 , _:node1a8o0svrpx17634 , _:node1a8o0svrpx17646 , _:node1a8o0svrpx17647 , _:node1a8o0svrpx17645 , _:node1a8o0svrpx17640 , _:node1a8o0svrpx17649 , _:node1a8o0svrpx17648 , _:node1a8o0svrpx17651 , _:node1a8o0svrpx17655 , _:node1a8o0svrpx17659 , _:node1a8o0svrpx17650 , _:node1a8o0svrpx17664 , _:node1a8o0svrpx17665 , _:node1a8o0svrpx17666 , _:node1a8o0svrpx17667 , _:node1a8o0svrpx17668 , _:node1a8o0svrpx17669 , _:node1a8o0svrpx17670 , _:node1a8o0svrpx17661 , _:node1a8o0svrpx17674 , _:node1a8o0svrpx17675 , _:node1a8o0svrpx17676 , _:node1a8o0svrpx17677 , _:node1a8o0svrpx17678 , _:node1a8o0svrpx17679 , _:node1a8o0svrpx17680 , _:node1a8o0svrpx17671 , _:node1a8o0svrpx17660 , _:node1a8o0svrpx17652 , _:node1a8o0svrpx17656 , _:node1a8o0svrpx17681 , _:node1a8o0svrpx17683 , _:node1a8o0svrpx17684 , _:node1a8o0svrpx17685 , _:node1a8o0svrpx17686 , _:node1a8o0svrpx17687 , _:node1a8o0svrpx17688 , _:node1a8o0svrpx17689 , _:node1a8o0svrpx17614 , _:node1a8o0svrpx17682 , _:node1a8o0svrpx17692 , _:node1a8o0svrpx17693 , _:node1a8o0svrpx17691 , _:node1a8o0svrpx17690 , _:node1a8o0svrpx17695 , _:node1a8o0svrpx17694 , atxa-core:docRoot , _:node1a8o0svrpx17616 , _:node1a8o0svrpx17613 , _:node1a8o0svrpx17620 , _:node1a8o0svrpx17621 , _:node1a8o0svrpx17622 , _:node1a8o0svrpx17623 , _:node1a8o0svrpx17624 , _:node1a8o0svrpx17625 , _:node1a8o0svrpx17626 , _:node1a8o0svrpx17627 , _:node1a8o0svrpx17617 , _:node1a8o0svrpx17631 , _:node1a8o0svrpx17632 , _:node1a8o0svrpx17633 , _:node1a8o0svrpx17635 , _:node1a8o0svrpx17636 , _:node1a8o0svrpx17637 , _:node1a8o0svrpx17638 , _:node1a8o0svrpx17639 , _:node1a8o0svrpx17628 , _:node1a8o0svrpx5 , _:node1a8o0svrpx17642 , _:node1a8o0svrpx17643 , _:node1a8o0svrpx17644 , _:node1a8o0svrpx17641 , _:node1a8o0svrpx17634 , _:node1a8o0svrpx17646 , _:node1a8o0svrpx17647 , _:node1a8o0svrpx17645 , _:node1a8o0svrpx17640 , _:node1a8o0svrpx17649 , _:node1a8o0svrpx17648 , _:node1a8o0svrpx17651 , _:node1a8o0svrpx17655 , _:node1a8o0svrpx17659 , _:node1a8o0svrpx17650 , _:node1a8o0svrpx17664 , _:node1a8o0svrpx17665 , _:node1a8o0svrpx17666 , _:node1a8o0svrpx17667 , _:node1a8o0svrpx17668 , _:node1a8o0svrpx17669 , _:node1a8o0svrpx17670 , _:node1a8o0svrpx17661 , _:node1a8o0svrpx17674 , _:node1a8o0svrpx17675 , _:node1a8o0svrpx17676 , _:node1a8o0svrpx17677 , _:node1a8o0svrpx17678 , _:node1a8o0svrpx17679 , _:node1a8o0svrpx17680 , _:node1a8o0svrpx17671 , _:node1a8o0svrpx17660 , _:node1a8o0svrpx17652 , _:node1a8o0svrpx17656 , _:node1a8o0svrpx17681 , _:node1a8o0svrpx17683 , _:node1a8o0svrpx17684 , _:node1a8o0svrpx17685 , _:node1a8o0svrpx17686 , _:node1a8o0svrpx17687 , _:node1a8o0svrpx17688 , _:node1a8o0svrpx17689 , _:node1a8o0svrpx17614 , _:node1a8o0svrpx17682 , _:node1a8o0svrpx17692 , _:node1a8o0svrpx17693 , _:node1a8o0svrpx17691 , _:node1a8o0svrpx17690 , _:node1a8o0svrpx17695 , _:node1a8o0svrpx17694 , atxa-core:docRoot , _:node1a8o0svrpx5467 , _:node1a8o0svrpx35 , _:node1a8o0svrpx36 , _:node1a8o0svrpx14056 , _:node1a8o0svrpx4249 , _:node1a8o0svrpx4383 , _:node1a8o0svrpx2864 , _:node1a8o0svrpx2482 , _:node1a8o0svrpx5467 , _:node1a8o0svrpx35 , _:node1a8o0svrpx36 , _:node1a8o0svrpx14056 , _:node1a8o0svrpx4249 , _:node1a8o0svrpx4383 , _:node1a8o0svrpx2864 , _:node1a8o0svrpx2482 .
+

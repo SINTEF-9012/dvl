@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_rvbR0LhKEeWM_Py082kHqA" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_sr12wLhKEeWM_Py082kHqA" clientDependency="_pcuZ8LhLEeWM_Py082kHqA" name="Engine">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZwvCMLhLEeWM_Py082kHqA" name="iFeatureConfig" type="_ungSMLhKEeWM_Py082kHqA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZwvCMbhLEeWM_Py082kHqA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZwvCMrhLEeWM_Py082kHqA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eHkfkLhLEeWM_Py082kHqA" name="" type="_ungSMLhKEeWM_Py082kHqA" association="_eHlGoLhLEeWM_Py082kHqA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eHkfkbhLEeWM_Py082kHqA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eHkfkrhLEeWM_Py082kHqA" value="*"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_pcuZ8LhLEeWM_Py082kHqA" name="" client="_sr12wLhKEeWM_Py082kHqA" supplier="_6BXtcLhKEeWM_Py082kHqA" contract="_6BXtcLhKEeWM_Py082kHqA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_ungSMLhKEeWM_Py082kHqA" name="IFeatureConfig">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_8t9IILhNEeWM_Py082kHqA" name="isConfigurable"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AEMEILhOEeWM_Py082kHqA" name="configure"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_B6VtcLhOEeWM_Py082kHqA" name="isConfigured"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_yO4okLhKEeWM_Py082kHqA" clientDependency="_yNMxELhLEeWM_Py082kHqA" name="LaurinFeature">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_yNMxELhLEeWM_Py082kHqA" name="" client="_yO4okLhKEeWM_Py082kHqA" supplier="_ungSMLhKEeWM_Py082kHqA" contract="_ungSMLhKEeWM_Py082kHqA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RnuzYLhOEeWM_Py082kHqA" name="doConfiguration"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_6BXtcLhKEeWM_Py082kHqA" name="IEngine">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6DmasLhNEeWM_Py082kHqA" name="run"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eHlGoLhLEeWM_Py082kHqA" name="" memberEnd="_eHlGobhLEeWM_Py082kHqA _eHkfkLhLEeWM_Py082kHqA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eHlGobhLEeWM_Py082kHqA" name="pendingFeatures" type="_sr12wLhKEeWM_Py082kHqA" association="_eHlGoLhLEeWM_Py082kHqA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eHlGorhLEeWM_Py082kHqA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eHlGo7hLEeWM_Py082kHqA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1Q-EELhLEeWM_Py082kHqA" name="BackingSensor">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4USEELhLEeWM_Py082kHqA" general="_yO4okLhKEeWM_Py082kHqA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PtYRcLhMEeWM_Py082kHqA" name="" type="__18esLhLEeWM_Py082kHqA" association="_PtY4gLhMEeWM_Py082kHqA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PtYRcbhMEeWM_Py082kHqA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PtYRcrhMEeWM_Py082kHqA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="__18esLhLEeWM_Py082kHqA" name="IBackingSensorAPI">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JG5rsLhXEeWM_Py082kHqA" name="hasBackingSensor"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Mdz9ILhXEeWM_Py082kHqA" name="isLaurinCar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Ohnn8LhXEeWM_Py082kHqA" name="enableBackingSensor"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DrkFYLhMEeWM_Py082kHqA" clientDependency="_NzTxcLhMEeWM_Py082kHqA _oWc40LnUEeW5O9qhlDcBjA" name="BackingSensorUMLAPI">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_in0soLnVEeW5O9qhlDcBjA" name="" type="_X-P7cLhMEeWM_Py082kHqA" association="_in1TsLnVEeW5O9qhlDcBjA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_in0sobnVEeW5O9qhlDcBjA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_in0sornVEeW5O9qhlDcBjA" value="1"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_NzTxcLhMEeWM_Py082kHqA" name="" client="_DrkFYLhMEeWM_Py082kHqA" supplier="__18esLhLEeWM_Py082kHqA" contract="__18esLhLEeWM_Py082kHqA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PtY4gLhMEeWM_Py082kHqA" name="api" memberEnd="_PtY4gbhMEeWM_Py082kHqA _PtYRcLhMEeWM_Py082kHqA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PtY4gbhMEeWM_Py082kHqA" name="" type="_1Q-EELhLEeWM_Py082kHqA" association="_PtY4gLhMEeWM_Py082kHqA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PtY4grhMEeWM_Py082kHqA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PtY4g7hMEeWM_Py082kHqA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_WywYsLhMEeWM_Py082kHqA" name="UML">
+    <packagedElement xmi:type="uml:Class" xmi:id="_X-P7cLhMEeWM_Py082kHqA" name="Model"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ACTDMLhNEeWM_Py082kHqA" name="ParkAissist">
+    <generalization xmi:type="uml:Generalization" xmi:id="_EQIVkLhNEeWM_Py082kHqA" general="_yO4okLhKEeWM_Py082kHqA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_s203YLhNEeWM_Py082kHqA" name="" type="_UjRM4LhNEeWM_Py082kHqA" association="_s21ecLhNEeWM_Py082kHqA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s203YbhNEeWM_Py082kHqA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s203YrhNEeWM_Py082kHqA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_x3BEsLhWEeWM_Py082kHqA" name="Operation1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_UjRM4LhNEeWM_Py082kHqA" name="IParkAssistAPI">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ZOrAgLhXEeWM_Py082kHqA" name="isLaurinCar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bAvbELhXEeWM_Py082kHqA" name="hasParkAssist"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_fbquQLhXEeWM_Py082kHqA" name="enableParkAssist"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kouB8LhXEeWM_Py082kHqA" name="hasBackingSensort"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_hJJIQLhNEeWM_Py082kHqA" clientDependency="_uZ4aALhXEeWM_Py082kHqA _sifbcLnUEeW5O9qhlDcBjA" name="ParkAssitUMLAPI">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_75wgYLnUEeW5O9qhlDcBjA" name="" type="_X-P7cLhMEeWM_Py082kHqA" association="_75xHcLnUEeW5O9qhlDcBjA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_75wgYbnUEeW5O9qhlDcBjA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_75wgYrnUEeW5O9qhlDcBjA" value="1"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_uZ4aALhXEeWM_Py082kHqA" name="" client="_hJJIQLhNEeWM_Py082kHqA" supplier="_UjRM4LhNEeWM_Py082kHqA" contract="_UjRM4LhNEeWM_Py082kHqA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s21ecLhNEeWM_Py082kHqA" name="api" memberEnd="_s21ecbhNEeWM_Py082kHqA _s203YLhNEeWM_Py082kHqA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_s21ecbhNEeWM_Py082kHqA" name="" type="_ACTDMLhNEeWM_Py082kHqA" association="_s21ecLhNEeWM_Py082kHqA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s21ecrhNEeWM_Py082kHqA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s21ec7hNEeWM_Py082kHqA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0dSkQLnTEeW5O9qhlDcBjA" clientDependency="_133Z8LnVEeW5O9qhlDcBjA" name="Utilities">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7Sb3ILnTEeW5O9qhlDcBjA" name="createClass"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_9JyaULnTEeW5O9qhlDcBjA" name="createProperty"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JiK20LnVEeW5O9qhlDcBjA" name="findClassIn"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_NteZoLnVEeW5O9qhlDcBjA" name="findBasePackage"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rP2SYLnVEeW5O9qhlDcBjA" name="findLaurinClass"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_oWc40LnUEeW5O9qhlDcBjA" name="calls" client="_DrkFYLhMEeWM_Py082kHqA" supplier="_0dSkQLnTEeW5O9qhlDcBjA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_sifbcLnUEeW5O9qhlDcBjA" name="calls" client="_hJJIQLhNEeWM_Py082kHqA" supplier="_0dSkQLnTEeW5O9qhlDcBjA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_75xHcLnUEeW5O9qhlDcBjA" name="model" memberEnd="_75xHcbnUEeW5O9qhlDcBjA _75wgYLnUEeW5O9qhlDcBjA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_75xHcbnUEeW5O9qhlDcBjA" name="" type="_hJJIQLhNEeWM_Py082kHqA" association="_75xHcLnUEeW5O9qhlDcBjA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_75xHcrnUEeW5O9qhlDcBjA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_75xHc7nUEeW5O9qhlDcBjA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_in1TsLnVEeW5O9qhlDcBjA" name="model" memberEnd="_in1TsbnVEeW5O9qhlDcBjA _in0soLnVEeW5O9qhlDcBjA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_in1TsbnVEeW5O9qhlDcBjA" name="" type="_DrkFYLhMEeWM_Py082kHqA" association="_in1TsLnVEeW5O9qhlDcBjA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_in1TsrnVEeW5O9qhlDcBjA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_in1Ts7nVEeW5O9qhlDcBjA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_133Z8LnVEeW5O9qhlDcBjA" name="modifies" client="_0dSkQLnTEeW5O9qhlDcBjA" supplier="_X-P7cLhMEeWM_Py082kHqA"/>
+</uml:Model>
